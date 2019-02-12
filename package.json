@@ -15,7 +15,14 @@
     "docs:build": "vuepress build docs"
   },
   "dependencies": {
+    "echarts": "^4.1.0",
+    "element-ui": "^2.5.4",
+    "highlight.js": "^9.12.0",
+    "less": "^3.0.2",
+    "less-loader": "^4.1.0",
     "vue": "^2.5.2",
+    "vue-echarts": "^4.0.1",
+    "vue-highlight.js": "^2.2.0",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
@@ -62,7 +69,7 @@
     "vue-style-loader": "^3.0.1",
     "vue-template-compiler": "^2.5.2",
     "vuepress": "^0.14.8",
-    "webpack": "^3.6.0",
+    "webpack": "^4.8.2",
     "webpack-bundle-analyzer": "^2.9.0",
     "webpack-dev-server": "^2.9.1",
     "webpack-merge": "^4.1.0"
