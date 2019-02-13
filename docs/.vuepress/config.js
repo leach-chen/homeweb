@@ -1,5 +1,6 @@
 module.exports = {
     title: 'Leach Chen', // 设置网站标题
+    base: "/",
     themeConfig: { //主题配置
         // 添加导航栏
         nav: [
