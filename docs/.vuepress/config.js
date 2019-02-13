@@ -1,82 +1,159 @@
 module.exports = {
-  title: 'data Com', // 设置网站标题
-  base: '/dataCom/',
-  description: 'Just for fun', //描述
-  dest: './dist',   // 设置输出目录
-  port: 2333, //端口
-  themeConfig: { //主题配置
-    // 添加导航栏
-    nav: [
-      { text: '主页', link: '/' }, // 导航条
-      { text: '组件文档', link: '/baseComponents/' },
-      { text: '知识库', link: '/knowledge/' },
-      {
-        text: 'github',
-        // 这里是下拉列表展现形式。
-        items: [
-          { text: 'focus-outside', link: 'https://github.com/TaoXuSheng/focus-outside' },
-          { text: 'stylus-converter', link: 'https://github.com/TaoXuSheng/stylus-converter' },
-        ]
-      }
-    ],
-    // 为以下路由添加侧边栏
-    sidebar:{
-      '/baseComponents/': [
-        {
-          title: '布局类组件',
-          collapsable: true,
-          children: [
-            'base/test1',
-            'base/test2',
-            'base/test3',
-            'base/test4',
-          ]
-        },
-        {
-          title: '可视化组件',
-          collapsable: true,
-          children: [
-          ]
-        },
-        {
-          title: '工具类组件',
-          collapsable: true,
-          children: [
-          ]
-        },
-        {
-          title: '方法类函数',
-          collapsable: true,
-          children: [
-          ]
+    title: 'Leach Chen', // 设置网站标题
+    themeConfig: { //主题配置
+        // 添加导航栏
+        nav: [
+            { text: '主页', link: '/' },
+            {
+                text: 'Github例子',
+                items: [
+                    { text: 'Android', link: '/github/android/all/' },
+                    { text: 'IOS', link: '/github/ios/all/' },
+                    { text: 'Flutter', link: '/github/flutter/all/'},
+                    { text: 'Vue', link: '/github/vue/all/'},
+                    { text: 'H5', link: '/github/h5/all/' },
+                ]
+            },
+            { text: '博客', link: 'https://www.leachchen.com/blog' },
+            { text: '游戏', link: '/game/all/' },
+            { text: '工具', link: '/tool/all/' },
+            { text: '留言', link: '/message/' },
+            { text: '投稿', link: '/contribute/' },
+            { text: '关于', link: '/about/' },
+        ],
+
+        sidebar: {
+            '/github/android/': [
+                {
+                    title: 'Android Github 合集',
+                    collapsable: false,
+                    children: [
+                        'all/',
+                        'project/',
+                    ]
+                },
+            ],
+            '/github/ios/': [
+                {
+                    title: 'IOS Github 合集',
+                    collapsable: false,
+                    children: [
+                        'all/',
+                        'project/',
+                    ]
+                },
+            ],
+            '/github/flutter/': [
+                {
+                    title: 'Flutter Github 合集',
+                    collapsable: false,
+                    children: [
+                        'all/',
+                        'project/',
+                    ]
+                },
+            ],
+            '/github/vue/': [
+                {
+                    title: 'Vue Github 合集',
+                    collapsable: false,
+                    children: [
+                        'all/',
+                        'project/',
+                    ]
+                },
+            ],
+            '/github/h5/': [
+                {
+                    title: 'H5 Github 合集',
+                    collapsable: false,
+                    children: [
+                        'all/',
+                        'h5/',
+                        'hexo/',
+                        'jekyll/',
+                        'php/',
+                    ]
+                },
+            ],
+
+            '/game/': [
+                {
+                    title: 'Games',
+                    collapsable: false,
+                    children: [
+                        'all/',
+                        'shoot/',
+                    ]
+                },
+            ],
+
+            '/tool/': [
+                {
+                    title: 'Tools',
+                    collapsable: false,
+                    children: [
+                        'all/',
+                        'practical/',
+                    ]
+                },
+            ],
         }
-      ],
-      '/knowledge/': [
-        {
-          title: 'CSS知识库',
-          collapsable: false,
-          children: [
-          ]
-        },
-        {
-          title: 'JS知识库',
-          collapsable: false,
-          children: [
-          ]
-        },
-        {
-          title: 'node知识库',
-          collapsable: false,
-          children: [
-          ]
-        },
-        {
-          title: 'vue知识库',
-          collapsable: false,
-          children: [
-          ]
-        }
-      ]
     }
-  }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* module.exports = {
+    title: 'Leach Chen', // 设置网站标题
+    themeConfig: { //主题配置
+        // 添加导航栏
+        nav: [
+            { text: '主页', link: '/' },
+            {
+                text: 'Github例子',
+                items: [
+                    { text: 'Android', link: '/github/android/all/' },
+                    { text: 'IOS', link: '/github/ios/' },
+                    { text: 'Vue', link: '/github/vue/'},
+                    { text: 'H5', link: '/github/h5/' },
+                ]
+            },
+            { text: '博客', link: '/a' },
+            { text: '游戏', link: '/a' },
+            { text: '工具', link: '/b' },
+            { text: '留言', link: '/b' },
+            { text: '投稿', link: '/b' },
+        ],
+
+        sidebar: {
+            '/github/android/': [
+                {
+                    title: '全部',
+                    collapsable: false,
+                    children: [
+                        'all/',
+                    ]
+                },
+                {
+                    title: '完整项目',
+                    collapsable: false,
+                    children: [
+                        'project/',
+                    ]
+                },
+            ]
+        }
+    }
+} */
