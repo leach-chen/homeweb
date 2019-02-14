@@ -1,38 +1,199 @@
 <template>
-<div class="homepage">
-    <div class="part-one"></div> 
-    <div class="part-two"></div> 
-</div>    
+
+  <el-container direction="vertical">
+    
+    <div class="commontent contentpart1">
+        <el-card class="box-card">
+            <h1>资源合集站</h1>
+            <p>这是一个资源收集站，在这里收集了众多优秀的资源</p>
+            <p>1:收集了众多Github上开源项目资源(Android,IOS,Flutter,Vue,H5)，均可在线预览项目效果及包含源码地址。</p>
+            <p>2:收集了众多游戏，你可以在线玩一玩也可下载源码。</p>
+            <p>3:收集了众多实用工具</p>
+            <p>4:如果你有优秀的资源也可贡献出来，我将及时收录</p>
+            <p>5:收集的资源若有侵犯你的权益，可以联系我将其下架</p>
+            <div class="imgcontent">
+                <img src="../public/img/bk1.jpg">
+            </div>
+            <el-row>
+                <el-button type="primary" @click="goContribute">贡献资源</el-button>
+            </el-row>
+        </el-card>
+    </div>
+
+    <div class="commontent contentpart2">
+        <el-card class="box-card">
+            <h1>Github 资源站</h1>
+            <p>在这里收集了Android，IOS，Flutter，Vue，H5完整项目，实用性高的组件。项目均包含源码及可在线预览效果，节省你的资源寻找及编译时间</p>
+            <div class="imgcontent">
+                <img src="https://cdn.jsdelivr.net/gh/flutterchina/website@1.0/images/intellij/hot-reload.gif">
+            </div>
+            <el-row>
+                  <el-button type="primary" @click="goGithub">立刻前往</el-button>
+            </el-row>
+        </el-card>
+    </div>
+
+    <div class="commontent contentpart3">
+        <el-card class="box-card">
+            <h1>休闲一刻</h1>
+            <p>在这里收集了众多可在线玩的游戏及源码</p>
+            <div class="imgcontent">
+                 <img src="../public/img/gamebk.jpg">
+            </div>
+            <el-row>
+                <el-button type="primary" @click="goGame">立刻前往</el-button>
+            </el-row>
+        </el-card>
+    </div>
+
+    
+    
+    <div class="commontent contentpart4">
+      
+    </div>
+  </el-container>
 </template>
+
+<script>
+import {diyfun} from '../public/js/aa.js' //注意路径
+export default {
+ data () {
+  return {
+   testvalue: ''
+  }
+ },
+ methods:{
+   goGithub(){
+     this.$router.push("/github/android/all/");
+   },
+   goBlog(){
+     this.$router.push("https://www.leachchen.com/blog");
+   },
+   goGame(){
+     this.$router.push("/game/all/");
+   },
+   goTool(){
+     this.$router.push("/tool/all/");
+   },
+   goTool(){
+     this.$router.push("/message/");
+   },
+   goContribute(){
+     this.$router.push("/contribute/");
+   },
+   goAbout(){
+     this.$router.push("/about/");
+   },
+ }
+}
+</script>
 
 
 <style lang="less" scoped>
-@background-color: #5b83ad;
-.homepage{
-  width: 100%;
-  height: 100%;
-  background-color: @background-color;
-  display: flex;                /*设置为flex布局*/
-  justify-content: center;   /*水平居中*/
-  align-items: center;     /*垂直居中*/
+
+.commontent
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow-x: hidden;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
 }
 
-.part-one{
-    width: 100px;
-    height: 100px;
-    background-color: blueviolet;
-    margin-top:100px;
-    display:block;
-    flex: none;
+.contentpart1{
+    background: url("../public/img/services-bg.jpg");
+    background-attachment: fixed;
+}
+
+.contentpart2{
+    background-color: #f2f6fc;
+    background: url("../public/img/skills-bg.jpg");
+    background-attachment: fixed;
+}
+
+.contentpart3{
+    background-color: #f2f6fc;
+    background-attachment: fixed;
+}
+
+.contentpart4{
+    background-color: #f2f6fc;
+    background: url("../public/img/contact-bg.jpg");
+    background-attachment: fixed;
+    height: 300px;
 }
 
 
-.part-two{
-    width: 100px;
-    height: 100px;
-    background-color: burlywood;
-    margin-top:100px;
-    display:block;
-    flex: none;
+ .box-card {
+    width: 100%;
+    max-width: 980px;
+    margin-top: 50px;
+    margin-bottom:50px; 
+  }
+
+
+  .experience {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+
+
+
+
+
+
+
+
+.commontent h1 {
+    color: #0091ea;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 36px;
+    margin: 20px 0;
+    font-weight: normal;
+ 
+}
+
+.commontent p {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.imgcontent {
+    text-align: center;
+}
+
+.imgcontent img{
+    text-align: center;
+    max-width: 100%;
+    max-height: 100%; 
+}
+
+
+
+</style>
+
+<style>
+.el-card__body {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+ 
 }
 </style>
