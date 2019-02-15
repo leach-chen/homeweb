@@ -3,22 +3,102 @@
 <div class="box-content clearfix">
 
        <el-card class="box-card">
-
-          <div style="position:relative;background: url("../public/img/bk1.jpg");">
-            
-            <div class="imgcontent">
-                    <div class="imgcontent-float"></div>
-                    <div class="imgcontent-float1"></div>
-            </div>
+          <div>
+              <div id = "imgfloatdiv">
+                  <p>aaaaaaaaaa</p>
+              </div>
+              <img id = "imgfloat" src="../public/img/bk1.jpg"/>
           </div>
-          
+
+           <el-row>
+                <el-button type="primary" @click="goContribute">贡献资源</el-button>
+            </el-row>
        </el-card>
 
+       <el-card class="box-card">
+          <div>
+              <div id = "imgfloatdiv">
+                  <p>aaaaaaaaaa</p>
+              </div>
+              <img id = "imgfloat" src="../public/img/bk1.jpg"/>
+          </div>
 
+           <el-row>
+                <el-button type="primary" @click="goContribute">贡献资源</el-button>
+            </el-row>
+       </el-card>
+
+              <el-card class="box-card">
+          <div>
+              <div id = "imgfloatdiv">
+                  <p>aaaaaaaaaa</p>
+              </div>
+              <img id = "imgfloat" src="../public/img/bk1.jpg"/>
+          </div>
+
+           <el-row>
+                <el-button type="primary" @click="goContribute">贡献资源</el-button>
+            </el-row>
+       </el-card>
+
+              <el-card class="box-card">
+          <div>
+              <div id = "imgfloatdiv">
+                  <p>aaaaaaaaaa</p>
+              </div>
+              <img id = "imgfloat" src="../public/img/bk1.jpg"/>
+          </div>
+
+           <el-row>
+                <el-button type="primary" @click="goContribute">贡献资源</el-button>
+            </el-row>
+       </el-card>
+
+              <el-card class="box-card">
+          <div>
+              <div id = "imgfloatdiv">
+                  <p>aaaaaaaaaa</p>
+              </div>
+              <img id = "imgfloat" src="../public/img/bk1.jpg"/>
+          </div>
+
+           <el-row>
+                <el-button type="primary" @click="goContribute">贡献资源</el-button>
+            </el-row>
+       </el-card>
+
+              <el-card class="box-card">
+          <div>
+              <div id = "imgfloatdiv">
+                  <p>aaaaaaaaaa</p>
+              </div>
+              <img id = "imgfloat" src="../public/img/bk1.jpg"/>
+          </div>
+
+           <el-row>
+                <el-button type="primary" @click="goContribute">贡献资源</el-button>
+            </el-row>
+       </el-card>
 
 </div>
 
 </template>
+
+<script>
+ export default {
+    name: 'app',
+    data () {
+      return {}
+    },
+    mounted () {
+      document.getElementById("imgfloatdiv").style.width= document.getElementById("imgfloat").width+"px";
+      document.getElementById("imgfloatdiv").style.height= document.getElementById("imgfloat").height+"px";
+    },
+   
+  }
+</script>
+
+
 
 <style>
 
@@ -28,47 +108,20 @@
     width: 29%;
     float: left;
     margin: 10px;
-    min-height: 300px;
 }
 
-.clearfix::before, .clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.clearfix::before {
-  clear: both;
-}
-
-
-
-.imgcontent
+#imgfloatdiv
 {
-    position: absolute;;
-   
+  position: absolute;
+
 }
 
-
-
-.imgcontent-float
+#imgfloatdiv p
 {
-    width: 150px;
-    height: 150px;
-    background-color: blueviolet;
-    
-    position:absolute;
-    float: left;
-}
-
-.imgcontent-float1
-{
-    width: 110px;
-    height: 110px;
-    background-color: #000000;
-    
-    position:absolute;
-    float: left;
+  /* position:absolute;
+  bottom:0px;
+  padding:0px;
+  margin:0px */
 }
 
 
@@ -81,4 +134,17 @@
 }
 
 
+</style>
+
+
+<style>
+.clearfix::before, .clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.clearfix::before {
+  clear: both;
+}
 </style>
