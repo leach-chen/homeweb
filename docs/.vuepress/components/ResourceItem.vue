@@ -10,10 +10,12 @@
               <img src="../public/img/bk1.jpg"/>
           </div>
 
-         <div class="btn-content">
-            <el-button type="primary">预览效果</el-button>
-            <el-button type="primary">源码下载</el-button>
-         </div>
+            <div class="btncontent">
+                <button class="btn1">预览效果</button>
+                <button class="btn2">源码下载</button>
+                <!-- <el-button type="primary">预览效果</el-button>
+                <el-button type="primary">源码下载</el-button> -->
+            </div>
        </el-card>
 
        <el-card class="box-card">
@@ -24,10 +26,12 @@
               <img src="../public/img/bk1.jpg"/>
           </div>
 
-         <div class="btn-content">
-            <el-button type="primary">预览效果</el-button>
-            <el-button type="primary">源码下载</el-button>
-         </div>
+            <div class="btncontent">
+                <button class="btn1">预览效果</button>
+                <button class="btn2">源码下载</button>
+                <!-- <el-button type="primary">预览效果</el-button>
+                <el-button type="primary">源码下载</el-button> -->
+            </div>
        </el-card>
 
        <el-card class="box-card">
@@ -38,10 +42,12 @@
               <img src="../public/img/bk1.jpg"/>
           </div>
 
-         <div class="btn-content">
-            <el-button type="primary">预览效果</el-button>
-            <el-button type="primary">源码下载</el-button>
-         </div>
+            <div class="btncontent">
+                <button class="btn1">预览效果</button>
+                <button class="btn2">源码下载</button>
+                <!-- <el-button type="primary">预览效果</el-button>
+                <el-button type="primary">源码下载</el-button> -->
+            </div>
        </el-card>
 
        <el-card class="box-card">
@@ -52,10 +58,12 @@
               <img src="../public/img/bk1.jpg"/>
           </div>
 
-         <div class="btn-content">
-            <el-button type="primary">预览效果</el-button>
-            <el-button type="primary">源码下载</el-button>
-         </div>
+            <div class="btncontent">
+                <button class="btn1">预览效果</button>
+                <button class="btn2">源码下载</button>
+                <!-- <el-button type="primary">预览效果</el-button>
+                <el-button type="primary">源码下载</el-button> -->
+            </div>
        </el-card>
 
        <el-card class="box-card">
@@ -66,10 +74,12 @@
               <img src="../public/img/bk1.jpg"/>
           </div>
 
-         <div class="btn-content">
-            <el-button type="primary">预览效果</el-button>
-            <el-button type="primary">源码下载</el-button>
-         </div>
+            <div class="btncontent">
+                <button class="btn1">预览效果</button>
+                <button class="btn2">源码下载</button>
+                <!-- <el-button type="primary">预览效果</el-button>
+                <el-button type="primary">源码下载</el-button> -->
+            </div>
        </el-card>
 
        <el-card class="box-card">
@@ -80,25 +90,14 @@
               <img src="../public/img/bk1.jpg"/>
           </div>
 
-         <div class="btn-content">
-            <el-button type="primary">预览效果</el-button>
-            <el-button type="primary">源码下载</el-button>
-         </div>
+            <div class="btncontent">
+                <button class="btn1">预览效果</button>
+                <button class="btn2">源码下载</button>
+                <!-- <el-button type="primary">预览效果</el-button>
+                <el-button type="primary">源码下载</el-button> -->
+            </div>
        </el-card>
 
-       <el-card class="box-card">
-          <div class="imgfloatcontent" >
-              <div class = "imgfloatdiv">  
-                  <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-              </div>
-              <img src="../public/img/bk1.jpg"/>
-          </div>
-
-         <div class="btn-content">
-            <el-button type="primary">预览效果</el-button>
-            <el-button type="primary">源码下载</el-button>
-         </div>
-       </el-card>
 
 
 </div>
@@ -167,13 +166,52 @@
 
 }
 
-.btn-content
+.btncontent
 {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
+.btncontent button
+{
+    flex-grow:1;
+    font-size: 15px;
+    color: #fff;
+    background-color: #409EFF;
+    border-color: #409EFF;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    cursor:pointer;
+}
+
+/* :active，元素被点击时变色，但颜色在点击后消失
+:focus， 元素被点击后变色，且颜色在点击后不消失 */
+
+.btncontent button:hover
+{
+    opacity:0.8;
+}
+
+.btncontent button:active
+{
+    opacity:1;
+}
+
+.btn1
+{
+    
+    margin-right:10px; 
+}
+
+.btn2
+{
+    
+    margin-left:10px; 
+}
 
 
 @media only screen and (max-width: 768px) {
