@@ -7,12 +7,12 @@
               <div class = "imgfloatdiv">  
                   <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
               </div>
-              <img src="../public/img/bk1.jpg"/>
+              <img src="/h5website/001/thumb/demo.png"/>
           </div>
 
             <div class="btncontent">
-                <button class="btn1">预览效果</button>
-                <button class="btn2">源码下载</button>
+                <button class="btn1" v-on:click="onPreview">预览效果</button>
+                <button class="btn2" v-on:click="onDownload">源码下载</button>
                 <!-- <el-button type="primary">预览效果</el-button>
                 <el-button type="primary">源码下载</el-button> -->
             </div>
@@ -117,6 +117,18 @@
 
       //console.log(document.getElementById("imgfloat").width+"px")
     },
+
+    methods:
+    {
+        onPreview()
+        {
+            window.open("https://www.leachchen.com/h5website/001/source/");
+        },
+        onDownload()
+        {
+            window.location.href = "https://www.leachchen.com/h5website/001/download/before.zip";
+        }
+    }
    
   }
 </script>
@@ -171,6 +183,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    width: 100%;
 }
 
 .btncontent button
