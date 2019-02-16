@@ -2,102 +2,21 @@
     
 <div class="box-content clearfix">
 
-       <el-card class="box-card">
+       <el-card class="box-card" v-for="item in dataList" :key="item.thumb">
           <div class="imgfloatcontent" >
               <div class = "imgfloatdiv">  
                   <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
               </div>
-              <img src="/h5website/001/thumb/demo.png"/>
+              <img :src="item.thumb"/>
           </div>
 
             <div class="btncontent">
-                <button class="btn1" v-on:click="onPreview">预览效果</button>
+                <button class="btn1" v-on:click="onPreview(item.preview)">预览效果</button>
                 <button class="btn2" v-on:click="onDownload">源码下载</button>
                 <!-- <el-button type="primary">预览效果</el-button>
                 <el-button type="primary">源码下载</el-button> -->
             </div>
        </el-card>
-
-       <el-card class="box-card">
-          <div class="imgfloatcontent" >
-              <div class = "imgfloatdiv">  
-                  <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-              </div>
-              <img src="../public/img/bk1.jpg"/>
-          </div>
-
-            <div class="btncontent">
-                <button class="btn1">预览效果</button>
-                <button class="btn2">源码下载</button>
-                <!-- <el-button type="primary">预览效果</el-button>
-                <el-button type="primary">源码下载</el-button> -->
-            </div>
-       </el-card>
-
-       <el-card class="box-card">
-          <div class="imgfloatcontent" >
-              <div class = "imgfloatdiv">  
-                  <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-              </div>
-              <img src="../public/img/bk1.jpg"/>
-          </div>
-
-            <div class="btncontent">
-                <button class="btn1">预览效果</button>
-                <button class="btn2">源码下载</button>
-                <!-- <el-button type="primary">预览效果</el-button>
-                <el-button type="primary">源码下载</el-button> -->
-            </div>
-       </el-card>
-
-       <el-card class="box-card">
-          <div class="imgfloatcontent" >
-              <div class = "imgfloatdiv">  
-                  <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-              </div>
-              <img src="../public/img/bk1.jpg"/>
-          </div>
-
-            <div class="btncontent">
-                <button class="btn1">预览效果</button>
-                <button class="btn2">源码下载</button>
-                <!-- <el-button type="primary">预览效果</el-button>
-                <el-button type="primary">源码下载</el-button> -->
-            </div>
-       </el-card>
-
-       <el-card class="box-card">
-          <div class="imgfloatcontent" >
-              <div class = "imgfloatdiv">  
-                  <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-              </div>
-              <img src="../public/img/bk1.jpg"/>
-          </div>
-
-            <div class="btncontent">
-                <button class="btn1">预览效果</button>
-                <button class="btn2">源码下载</button>
-                <!-- <el-button type="primary">预览效果</el-button>
-                <el-button type="primary">源码下载</el-button> -->
-            </div>
-       </el-card>
-
-       <el-card class="box-card">
-          <div class="imgfloatcontent" >
-              <div class = "imgfloatdiv">  
-                  <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-              </div>
-              <img src="../public/img/bk1.jpg"/>
-          </div>
-
-            <div class="btncontent">
-                <button class="btn1">预览效果</button>
-                <button class="btn2">源码下载</button>
-                <!-- <el-button type="primary">预览效果</el-button>
-                <el-button type="primary">源码下载</el-button> -->
-            </div>
-       </el-card>
-
 
 
 </div>
@@ -108,7 +27,28 @@
  export default {
     name: 'app',
     data () {
-      return {}
+      return {
+          dataList:[
+              {thumb:"/h5website/001/thumb/demo.png",preview:"https://www.leachchen.com/h5website/001/source/",download:"https://www.leachchen.com/h5website/001/download/before.zip"},
+               {thumb:"/h5website/001/thumb/demo.png",preview:"https://www.leachchen.com/h5website/001/source/",download:"https://www.leachchen.com/h5website/001/download/before.zip"},
+                {thumb:"/h5website/001/thumb/demo.png",preview:"https://www.leachchen.com/h5website/001/source/",download:"https://www.leachchen.com/h5website/001/download/before.zip"},
+                 {thumb:"/h5website/001/thumb/demo.png",preview:"https://www.leachchen.com/h5website/001/source/",download:"https://www.leachchen.com/h5website/001/download/before.zip"},
+                  {thumb:"/h5website/001/thumb/demo.png",preview:"https://www.leachchen.com/h5website/001/source/",download:"https://www.leachchen.com/h5website/001/download/before.zip"},
+                   {thumb:"/h5website/001/thumb/demo.png",preview:"https://www.leachchen.com/h5website/001/source/",download:"https://www.leachchen.com/h5website/001/download/before.zip"},
+                    {thumb:"/h5website/001/thumb/demo.png",preview:"https://www.leachchen.com/h5website/001/source/",download:"https://www.leachchen.com/h5website/001/download/before.zip"},
+                     {thumb:"/h5website/001/thumb/demo.png",preview:"https://www.leachchen.com/h5website/001/source/",download:"https://www.leachchen.com/h5website/001/download/before.zip"},
+                      {thumb:"/h5website/001/thumb/demo.png",preview:"https://www.leachchen.com/h5website/001/source/",download:"https://www.leachchen.com/h5website/001/download/before.zip"},
+                       {thumb:"/h5website/001/thumb/demo.png",preview:"https://www.leachchen.com/h5website/001/source/",download:"https://www.leachchen.com/h5website/001/download/before.zip"},
+                        {thumb:"/h5website/001/thumb/demo.png",preview:"https://www.leachchen.com/h5website/001/source/",download:"https://www.leachchen.com/h5website/001/download/before.zip"},
+                         {thumb:"/h5website/001/thumb/demo.png",preview:"https://www.leachchen.com/h5website/001/source/",download:"https://www.leachchen.com/h5website/001/download/before.zip"},
+                          {thumb:"/h5website/001/thumb/demo.png",preview:"https://www.leachchen.com/h5website/001/source/",download:"https://www.leachchen.com/h5website/001/download/before.zip"},
+                           {thumb:"/h5website/001/thumb/demo.png",preview:"https://www.leachchen.com/h5website/001/source/",download:"https://www.leachchen.com/h5website/001/download/before.zip"},
+                            {thumb:"/h5website/001/thumb/demo.png",preview:"https://www.leachchen.com/h5website/001/source/",download:"https://www.leachchen.com/h5website/001/download/before.zip"},
+                             {thumb:"/h5website/001/thumb/demo.png",preview:"https://www.leachchen.com/h5website/001/source/",download:"https://www.leachchen.com/h5website/001/download/before.zip"},
+                              {thumb:"/h5website/001/thumb/demo.png",preview:"https://www.leachchen.com/h5website/001/source/",download:"https://www.leachchen.com/h5website/001/download/before.zip"},
+                               {thumb:"/h5website/001/thumb/demo.png",preview:"https://www.leachchen.com/h5website/001/source/",download:"https://www.leachchen.com/h5website/001/download/before.zip"},
+          ]
+      }
     },
     mounted () {
         
@@ -120,9 +60,10 @@
 
     methods:
     {
-        onPreview()
+        onPreview:function(url)
         {
-            window.open("https://www.leachchen.com/h5website/001/source/");
+            alert(url)
+           // window.open(url);
         },
         onDownload()
         {
