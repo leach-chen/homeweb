@@ -2,17 +2,17 @@
     
 <div class="box-content clearfix">
 
-       <el-card class="box-card" v-for="item in dataList" :key="item.thumb">
+       <el-card class="box-card" v-for="item in h5DataList" :key="item.thumb">
           <div class="imgfloatcontent" >
               <div class = "imgfloatdiv">  
-                  <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                  <p>旅游风格的H5网站</p>
               </div>
               <img :src="item.thumb"/>
           </div>
 
             <div class="btncontent">
                 <button class="btn1" v-on:click="onPreview(item.preview)">预览效果</button>
-                <button class="btn2" v-on:click="onDownload">源码下载</button>
+                <button class="btn2" v-on:click="onDownload(item.download)">源码下载</button>
                 <!-- <el-button type="primary">预览效果</el-button>
                 <el-button type="primary">源码下载</el-button> -->
             </div>
@@ -24,34 +24,17 @@
 </template>
 
 <script>
+ import {h5DataList} from '../public/js/h5/h5Data.js'
  export default {
     name: 'app',
     data () {
       return {
-          dataList:[
-              {thumb:"/h5website/001/thumb/demo.png",preview:"https://www.leachchen.com/h5website/001/source/",download:"https://www.leachchen.com/h5website/001/download/before.zip"},
-               {thumb:"/h5website/001/thumb/demo.png",preview:"https://www.leachchen.com/h5website/001/source/",download:"https://www.leachchen.com/h5website/001/download/before.zip"},
-                {thumb:"/h5website/001/thumb/demo.png",preview:"https://www.leachchen.com/h5website/001/source/",download:"https://www.leachchen.com/h5website/001/download/before.zip"},
-                 {thumb:"/h5website/001/thumb/demo.png",preview:"https://www.leachchen.com/h5website/001/source/",download:"https://www.leachchen.com/h5website/001/download/before.zip"},
-                  {thumb:"/h5website/001/thumb/demo.png",preview:"https://www.leachchen.com/h5website/001/source/",download:"https://www.leachchen.com/h5website/001/download/before.zip"},
-                   {thumb:"/h5website/001/thumb/demo.png",preview:"https://www.leachchen.com/h5website/001/source/",download:"https://www.leachchen.com/h5website/001/download/before.zip"},
-                    {thumb:"/h5website/001/thumb/demo.png",preview:"https://www.leachchen.com/h5website/001/source/",download:"https://www.leachchen.com/h5website/001/download/before.zip"},
-                     {thumb:"/h5website/001/thumb/demo.png",preview:"https://www.leachchen.com/h5website/001/source/",download:"https://www.leachchen.com/h5website/001/download/before.zip"},
-                      {thumb:"/h5website/001/thumb/demo.png",preview:"https://www.leachchen.com/h5website/001/source/",download:"https://www.leachchen.com/h5website/001/download/before.zip"},
-                       {thumb:"/h5website/001/thumb/demo.png",preview:"https://www.leachchen.com/h5website/001/source/",download:"https://www.leachchen.com/h5website/001/download/before.zip"},
-                        {thumb:"/h5website/001/thumb/demo.png",preview:"https://www.leachchen.com/h5website/001/source/",download:"https://www.leachchen.com/h5website/001/download/before.zip"},
-                         {thumb:"/h5website/001/thumb/demo.png",preview:"https://www.leachchen.com/h5website/001/source/",download:"https://www.leachchen.com/h5website/001/download/before.zip"},
-                          {thumb:"/h5website/001/thumb/demo.png",preview:"https://www.leachchen.com/h5website/001/source/",download:"https://www.leachchen.com/h5website/001/download/before.zip"},
-                           {thumb:"/h5website/001/thumb/demo.png",preview:"https://www.leachchen.com/h5website/001/source/",download:"https://www.leachchen.com/h5website/001/download/before.zip"},
-                            {thumb:"/h5website/001/thumb/demo.png",preview:"https://www.leachchen.com/h5website/001/source/",download:"https://www.leachchen.com/h5website/001/download/before.zip"},
-                             {thumb:"/h5website/001/thumb/demo.png",preview:"https://www.leachchen.com/h5website/001/source/",download:"https://www.leachchen.com/h5website/001/download/before.zip"},
-                              {thumb:"/h5website/001/thumb/demo.png",preview:"https://www.leachchen.com/h5website/001/source/",download:"https://www.leachchen.com/h5website/001/download/before.zip"},
-                               {thumb:"/h5website/001/thumb/demo.png",preview:"https://www.leachchen.com/h5website/001/source/",download:"https://www.leachchen.com/h5website/001/download/before.zip"},
-          ]
+          h5DataList
+        //   dataList:[]
       }
     },
     mounted () {
-        
+
       //document.getElementById("imgfloatdiv").style.width= document.getElementById("imgfloat").width+"px";
       //document.getElementById("imgfloatdiv").style.height= document.getElementById("imgfloat").height+"px";
 
@@ -62,12 +45,13 @@
     {
         onPreview:function(url)
         {
-            alert(url)
-           // window.open(url);
+            //alert(url)
+            window.open("https://www.leachchen.com/open.html?open="+url);
         },
-        onDownload()
+        onDownload(url)
         {
-            window.location.href = "https://www.leachchen.com/h5website/001/download/before.zip";
+            //alert(url)
+            window.location.href = url;
         }
     }
    
@@ -111,7 +95,8 @@
   padding:0px;
   margin:0px */
   color: aliceblue;
-  font-size: 18px;
+  font-size: 14px;
+  margin-left: 10px;
   
   overflow: hidden;
   text-overflow:ellipsis;
