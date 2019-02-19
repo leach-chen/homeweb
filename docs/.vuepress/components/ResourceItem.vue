@@ -2,7 +2,7 @@
     
 <div class="box-content clearfix">
 
-       <el-card class="box-card" v-for="item in dataList" :key="item.thumb">
+       <el-card class="box-card" v-for="item in dataList" :key="item.thumb" v-if="item.sold">
           <div class="imgfloatcontent" >
               <div class = "imgfloatdiv">  
                   <p>{{item.description}}</p>
