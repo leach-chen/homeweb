@@ -1,3 +1,4 @@
 # 全部
 
-all
+
+<ResourceItem/>

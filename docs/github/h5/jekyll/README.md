@@ -1,3 +1,4 @@
 # Jekyll
 
-all
+
+<ResourceItem/>

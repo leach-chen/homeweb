@@ -24,25 +24,93 @@
 </template>
 
 <script>
- import {h5DataList} from '../public/js/h5/h5Data.js'
- import {androidDataList} from '../public/js/android/androidData.js'
+
+
+  var co = require('../public/js/data/Constant.js')
+  var data = require('../public/js/data/DataFactory.js')
 
  export default {
     name: 'app',
     data () {
       //alert(this.$route.path)
+ 
       var dataList = []
 
-      if(this.$route.path==="/github/android/all/")
+      var path = this.$route.path
+      
+      switch(path)
       {
-         dataList = androidDataList
-      }else
-      {
-         dataList = h5DataList
+        case co.PATH_ANDROID_ALL:
+          dataList = data.getAndroidAllData()
+        break
+        case co.PATH_ANDROID_FULL:
+          dataList = data.getAndroidFullData()
+        break
+
+
+
+        case co.PATH_IOS_ALL:
+          dataList = data.getIosAllData()
+        break
+        case co.PATH_IOS_FULL:
+          dataList = data.getIosFullData()
+        break
+
+
+
+        case co.PATH_FLUTTER_ALL:
+          dataList = data.getFlutterAllData()
+        break
+        case co.PATH_Flutter_FULL:
+          dataList = data.getFlutterFullData()
+        break
+
+
+
+        case co.PATH_VUE_ALL:
+          dataList = data.getVueAllData()
+        break
+        case co.PATH_VUE_FULL:
+          dataList = data.getVueFullData()
+        break
+
+
+
+        case co.PATH_TOOL_ALL:
+          dataList = data.getToolAllData()
+        break
+        case co.PATH_TOOL_PRACTICAL:
+          dataList = data.getToolPracticalData()
+        break
+
+
+        case co.PATH_GAME_ALL:
+          dataList = data.getGameAllData()
+        break
+        case co.PATH_GAME_SHOOT:
+          dataList = data.getGameShootData()
+        break
+
+
+
+        case co.PATH_H5_ALL:
+          dataList = data.getH5AllData()
+        break
+        case co.PATH_H5_CSS:
+          dataList = data.getH5CssData()
+        break
+        case co.PATH_H5_JKEYLL:
+          dataList = data.getH5JekyllData()
+        break
+        case co.PATH_H5_HEXO:
+          dataList = data.getH5HexoData()
+        break
+        case co.PATH_H5_PHP:
+          dataList = data.getH5PhpData()
+        break
       }
       return {
           dataList
-        //   dataList:[]
       }
     },
     mounted () {
