@@ -16,15 +16,15 @@
 </template>
 
  <script>
-      new Valine({
-          el: '#vcomments',
-          appId: 'kyG2zl9DjYp6euveXb9LkzK6-gzGzoHsz',
-          appKey: '6MTKO60mO7igK2mNi1hgsWIp',
-          notify:true, 
-          verify:true, 
-          avatar:'mm', 
-          placeholder: 'just go go' 
-      })
+      // new Valine({
+      //     el: '#vcomments',
+      //     appId: 'kyG2zl9DjYp6euveXb9LkzK6-gzGzoHsz',
+      //     appKey: '6MTKO60mO7igK2mNi1hgsWIp',
+      //     notify:true, 
+      //     verify:true, 
+      //     avatar:'mm', 
+      //     placeholder: 'just go go' 
+      // })
 </script>
 
 
