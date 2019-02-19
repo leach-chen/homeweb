@@ -2,17 +2,17 @@
     
 <div class="box-content clearfix">
 
-       <el-card class="box-card" v-for="item in dataList" :key="item.thumb" v-if="item.sold">
+       <el-card class="box-card" v-for="item in dataList" :key="item.Url" v-if="item.sold">
           <div class="imgfloatcontent" >
               <div class = "imgfloatdiv">  
                   <p>{{item.description}}</p>
               </div>
-              <img :src="item.thumb"/>
+              <img :src="item.thumbUrl"/>
           </div>
 
             <div class="btncontent">
-                <button class="btn1" v-on:click="onPreview(item.preview)">预览效果</button>
-                <button class="btn2" v-on:click="onDownload(item.download)">源码下载</button>
+                <button class="btn1" v-on:click="onPreview(item.previewUrl)">预览效果</button>
+                <button class="btn2" v-on:click="onDownload(item.downloadUrl)">源码下载</button>
                 <!-- <el-button type="primary">预览效果</el-button>
                 <el-button type="primary">源码下载</el-button> -->
             </div>
