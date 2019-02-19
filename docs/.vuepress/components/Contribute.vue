@@ -4,7 +4,10 @@
     
     <div class="commontent contentpart1">
         <el-card class="box-card">
-            投稿
+            <h2>欢迎贡献资源</h2>
+            1:aaaaaaa<br>
+            2:bbbbbbb<br>
+            3:ccccccc<br>
         </el-card>
     </div>
 
