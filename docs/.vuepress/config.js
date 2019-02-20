@@ -5,9 +5,15 @@ module.exports = {
          // add jquert and fancybox
          ['script', { async:"",src:"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"}],
          ['script', {},"(adsbygoogle = window.adsbygoogle || []).push({google_ad_client: \"ca-pub-4924092018203651\",enable_page_level_ads: true});"],
-         ['script', {src:"//cdn1.lncld.net/static/js/3.0.4/av-min.js"}],
-         ['script', {src:"//unpkg.com/valine/dist/Valine.min.js"}],
      ],
+
+    plugins: [
+    ['@vuepress/back-to-top', true],
+    ['@vuepress/pwa', {
+        serviceWorker: true,
+        updatePopup: true
+    }],
+    ],
     themeConfig: { //主题配置
         // 添加导航栏
         nav: [

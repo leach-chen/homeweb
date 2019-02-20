@@ -1,6 +1,6 @@
 <template>
 
-  <div style="width:100%;height:1000px;">
+  <div>
 <!--     
     <div class="commontent contentpart1">
         <el-card class="box-card">
@@ -8,7 +8,7 @@
         </el-card>
     </div> -->
 
-  <div id="vcomments" style="width:100%;height:1000px;background-color:#666666"></div>
+  <div id="vcomments"></div>
    
 
 
