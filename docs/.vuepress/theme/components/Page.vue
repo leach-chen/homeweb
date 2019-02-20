@@ -58,15 +58,22 @@
     </div>
 
     <slot name="bottom"/>
+    <Comments v-bind:is="viewComments"></Comments>  
+    <!-- myadd -->
   </main>
 </template>
 
 <script>
 import { resolvePage, normalize, outboundRE, endingSlashRE } from '../util'
-
+import Comments from './Comments.vue'  //myadd
 export default {
   props: ['sidebarItems'],
-
+  components: {Comments},  //myadd
+  data (){  //myadd
+    return {
+      viewComments: 'Comments'
+    }
+  },
   computed: {
     lastUpdated () {
       return this.$page.lastUpdated
