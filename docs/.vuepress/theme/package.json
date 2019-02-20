@@ -1,35 +1,40 @@
 {
-  "_from": "@vuepress/theme-default@^1.0.0-alpha.39",
+  "_args": [
+    [
+      "@vuepress/theme-default@1.0.0-alpha.39",
+      "d:\\MyPart\\githubproject\\homeweb"
+    ]
+  ],
+  "_development": true,
+  "_from": "@vuepress/theme-default@1.0.0-alpha.39",
   "_id": "@vuepress/theme-default@1.0.0-alpha.39",
   "_inBundle": false,
   "_integrity": "sha512-Qwyob+Ep4C8kZsiNUC/fNZ5Ayfd4mKftZAr3XvcRa58xc7PkP/dtzQ1alPNp3GTZaAXldwMxqRegmY7s6Vgf/Q==",
   "_location": "/@vuepress/theme-default",
   "_phantomChildren": {},
   "_requested": {
-    "type": "range",
+    "type": "version",
     "registry": true,
-    "raw": "@vuepress/theme-default@^1.0.0-alpha.39",
+    "raw": "@vuepress/theme-default@1.0.0-alpha.39",
     "name": "@vuepress/theme-default",
     "escapedName": "@vuepress%2ftheme-default",
     "scope": "@vuepress",
-    "rawSpec": "^1.0.0-alpha.39",
+    "rawSpec": "1.0.0-alpha.39",
     "saveSpec": null,
-    "fetchSpec": "^1.0.0-alpha.39"
+    "fetchSpec": "1.0.0-alpha.39"
   },
   "_requiredBy": [
     "/vuepress"
   ],
   "_resolved": "https://registry.npmjs.org/@vuepress/theme-default/-/theme-default-1.0.0-alpha.39.tgz",
-  "_shasum": "5638d04768f5b71c83c28f5a750374e8b3f949f4",
-  "_spec": "@vuepress/theme-default@^1.0.0-alpha.39",
-  "_where": "D:\\MyPart\\githubproject\\homeweb\\node_modules\\vuepress",
+  "_spec": "1.0.0-alpha.39",
+  "_where": "d:\\MyPart\\githubproject\\homeweb",
   "author": {
     "name": "Evan You"
   },
   "bugs": {
     "url": "https://github.com/vuejs/vuepress/issues"
   },
-  "bundleDependencies": false,
   "dependencies": {
     "@vuepress/plugin-active-header-links": "^1.0.0-alpha.39",
     "@vuepress/plugin-nprogress": "^1.0.0-alpha.39",
@@ -38,7 +43,6 @@
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2"
   },
-  "deprecated": false,
   "description": "Default theme for VuePress",
   "gitHead": "170cf6e4b9d826c0692a9c14002d7b0dd5dd1cbe",
   "homepage": "https://github.com/vuejs/vuepress/packages/@vuepress/theme-default#readme",

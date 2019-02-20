@@ -24,11 +24,11 @@ export default {
         el: '#vcomments',
         appId: 'kyG2zl9DjYp6euveXb9LkzK6-gzGzoHsz',
         appKey: '6MTKO60mO7igK2mNi1hgsWIp',
-        notify: false,
-        verify: false,
+        notify: true,
+        verify: true,
         avatar: 'monsterid',
         path: window.location.pathname,
-        placeholder: '欢迎留言与我分享您的想法...',
+        placeholder: '既然来了就留个脚印吧，不用登陆就能发表留言哦',
       });
       this.valineRefresh = false
     }
