@@ -4,13 +4,14 @@
     
     <div class="commontent contentpart1">
         <el-card class="box-card">
-            <h1>资源合集站</h1>
-            <p>这是一个资源收集站，在这里收集了众多优秀的资源</p>
-            <p>1:收集了众多Github上开源项目资源(Android,IOS,Flutter,Vue,H5)，均可在线预览项目效果及包含源码地址。</p>
-            <p>2:收集了众多游戏，你可以在线玩一玩也可下载源码。</p>
-            <p>3:收集了众多实用工具</p>
-            <p>4:如果你有优秀的资源也可贡献出来，我将及时收录</p>
-            <p>5:收集的资源若有侵犯你的权益，可以联系我将其下架</p>
+            <h1>资源小仓库</h1>
+            <p>这是一个资源收集网站，目的在于收集一些精选资源</p>
+            <p>1:收集了Github上开源项目资源(Android,IOS,Flutter,Vue,H5)，可在线预览项目效果及包含源码地址</p>
+            <p>2:收集了游戏，你可以在线玩一玩也可下载源码</p>
+            <p>3:收集了实用工具</p>
+            <br>
+            也欢迎大家一起贡献资源，让小仓库丰富起来，也让你的资源让更多人知道
+            
             <div class="imgcontent">
                 <img src="../public/img/bk1.jpg">
             </div>
@@ -28,7 +29,7 @@
                 <img src="https://cdn.jsdelivr.net/gh/flutterchina/website@1.0/images/intellij/hot-reload.gif">
             </div>
             <el-row>
-                  <el-button type="primary" @click="goGithub">立刻前往</el-button>
+                  <el-button type="primary" @click="goGithub">探索资源</el-button>
             </el-row>
         </el-card>
     </div>
@@ -79,10 +80,10 @@ export default {
      this.$router.push("/message/");
    },
    goContribute(){
-     this.$router.push("/contribute/");
+     this.$router.push("/join/");
    },
    goAbout(){
-     this.$router.push("/about/");
+     this.$router.push("/join/");
    },
  }
 }

@@ -1,5 +1,5 @@
 module.exports = {
-    title: '资源小仓库', // 设置网站标题
+    title: 'Leach Chen', // 设置网站标题
     base: "/",
     head: [
          // add jquert and fancybox
@@ -16,10 +16,14 @@ module.exports = {
     ],
     themeConfig: { //主题配置
         // 添加导航栏
+        algolia: {
+            apiKey: 'eb9a770d84c8a6f01e3a5a45f8e9ae27',
+            indexName: 'leachchen'
+        },
         nav: [
             { text: '主页', link: '/' },
             {
-                text: 'Github例子',
+                text: 'Github资源',
                 items: [
                     { text: 'Android', link: '/github/android/all/' },
                     { text: 'IOS', link: '/github/ios/all/' },
@@ -28,12 +32,13 @@ module.exports = {
                     { text: 'H5', link: '/github/h5/all/' },
                 ]
             },
-            { text: '博客', link: 'https://www.leachchen.com/blog' },
             { text: '游戏', link: '/game/all/' },
             { text: '工具', link: '/tool/all/' },
             { text: '留言', link: '/message/' },
-            { text: '投稿', link: '/contribute/' },
-            { text: '关于', link: '/about/' },
+            { text: 'Gitter聊天', link: 'https://www.leachchen.com/blog' },
+            { text: '博客', link: 'https://gitter.im/leachchen/fullstack?utm_source=share-link&utm_medium=link&utm_campaign=share-link' },
+            //{ text: '投稿', link: '/contribute/' },
+            { text: '加入', link: '/join/' },
         ],
 
         sidebar: {
