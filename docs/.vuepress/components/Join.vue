@@ -5,9 +5,9 @@
     <div class="joinboxcontent content1">
         <el-card class="box-card-join">
             <h2>贡献资源</h2>
-            1：可在留言区提交您的资源<br><br>
-            2：可在Gitter聊天室提交您的资源<br><br>
-            3：可将您的资源发送至我的邮箱349763031@qq.com/leach.chen@gmail.com<br>
+            1：在留言区提交您的资源<br><br>
+            2：在Gitter聊天室提交您的资源<br><br>
+            3：将您的资源发送至我的邮箱349763031@qq.com/leach.chen@gmail.com<br>
             <br>
             注：贡献的资源需包含资源的源码地址、描述、贡献者昵称，这些到时会显示在网页上
             <br><br>

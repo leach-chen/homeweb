@@ -5,6 +5,14 @@
        <el-card class="box-card" v-for="item in dataList" :key="item.Url" v-if="item.sold">
           <div class="imgfloatcontent" >
               <div class = "imgfloatdiv">  
+                  <a :href="item.fromauthorurl" style="margin-left:10px;font-size:12px;" v-if="item.fromauthor!=''">From {{item.fromauthor}}</a>
+                  <div class="authorpart">
+                    <a :href="item.authorurl" style="margin-left:10px;font-size:12px;" v-if="item.author!=''">By {{item.author}}</a>
+                    <iframe style="margin-left:10px;"
+                      frameborder="0" scrolling="0" width="91px" height="20px"
+                      :src="'https://ghbtns.com/github-btn.html?user='+item.author+'&repo='+item.repo+'&type=star&count=true'" v-if="item.author!=''&&item.repo!=''">
+                    </iframe>  
+                  </div>
                   <p>{{item.description}}</p>
               </div>
               <img :src="item.thumbUrl"/>
@@ -33,7 +41,7 @@
     name: 'app',
     data () {
       //alert(this.$route.path)
- 
+
       var dataList = []
 
       var path = this.$route.path
@@ -110,7 +118,7 @@
         break
       }
       return {
-          dataList
+          dataList,
       }
     },
     mounted () {
@@ -141,5 +149,12 @@
 
 
 <style>
- @import '../public/css/item.css'
+ @import '../public/css/item.css';
+
+ .authorpart
+ {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+ }
 </style>

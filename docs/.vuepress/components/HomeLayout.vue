@@ -5,7 +5,7 @@
     <div class="commontent contentpart1">
         <el-card class="box-card">
             <h1>资源小仓库</h1>
-            <p>这是一个资源收集网站，目的在于收集一些精选资源</p>
+            <p>这是一个资源收集网站，收集一些精选资源</p>
             <p>1:收集了Github上开源项目资源(Android,IOS,Flutter,Vue,H5)，可在线预览项目效果及包含源码地址</p>
             <p>2:收集了游戏，你可以在线玩一玩也可下载源码</p>
             <p>3:收集了实用工具</p>
