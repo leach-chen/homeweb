@@ -3,8 +3,10 @@
 <div class="box-content clearfix">
 
        <el-card class="box-card" v-for="item in dataList" :key="item.Url" v-if="item.sold">
-          <div class="imgfloatcontent" :style="{ 'background': 'url(' +item.thumbUrl + ') no-repeat center center', 'background-size': '100% 100%'}">
+          <div class="imgfloatcontent">
+               <!-- <div class="imgfloatcontent" :style="{ 'background': 'url(' +item.thumbUrl + ') no-repeat center center', 'background-size': '100% 100%'}"> -->
               <div class = "imgcover"></div>
+              <img :src="item.thumbUrl"/>
               <div class = "imgfloatdiv">  
                   <a :href="item.fromauthorurl" style="margin-left:10px;font-size:12px;" v-if="item.fromauthor!=''">By {{item.fromauthor}}</a>
                    <a :href="item.authorurl" style="font-size:12px;" v-if="item.author!=''">/ From {{item.author}}</a>
