@@ -5,11 +5,11 @@
        <el-card class="box-card" v-for="item in dataList" :key="item.Url" v-if="item.sold">
           <div class="imgfloatcontent" >
               <div class = "imgfloatdiv">  
-                  <a :href="item.fromauthorurl" style="margin-left:10px;font-size:12px;" v-if="item.fromauthor!=''">From {{item.fromauthor}}</a>
+                  <a :href="item.fromauthorurl" style="margin-left:10px;font-size:12px;" v-if="item.fromauthor!=''">From {{item.fromauthor}}</a>/
+                   <a :href="item.authorurl" style="font-size:12px;" v-if="item.author!=''">By {{item.author}}</a>
                   <div class="authorpart">
-                    <a :href="item.authorurl" style="margin-left:10px;font-size:12px;" v-if="item.author!=''">By {{item.author}}</a>
-                    <iframe style="margin-left:10px;"
-                      frameborder="0" scrolling="0" width="91px" height="20px"
+                    <iframe style="margin-left:10px;margin-top:10px;"
+                      frameborder="0" scrolling="0"  height="20px"
                       :src="'https://ghbtns.com/github-btn.html?user='+item.author+'&repo='+item.repo+'&type=star&count=true'" v-if="item.author!=''&&item.repo!=''">
                     </iframe>  
                   </div>
@@ -134,7 +134,8 @@
         onPreview:function(url)
         {
             //alert(url)
-            window.open("https://www.leachchen.com/open.html?open="+url);
+            //window.open("https://www.leachchen.com/open.html?open="+url);
+             window.location.href = url;
         },
         onDownload(url)
         {
