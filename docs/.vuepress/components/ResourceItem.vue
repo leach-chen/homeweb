@@ -3,10 +3,11 @@
 <div class="box-content clearfix">
 
        <el-card class="box-card" v-for="item in dataList" :key="item.Url" v-if="item.sold">
-          <div class="imgfloatcontent" >
+          <div class="imgfloatcontent" :style="{ 'background': 'url(' +item.thumbUrl + ') no-repeat center center', 'background-size': '100% 100%'}">
+              <div class = "imgcover"></div>
               <div class = "imgfloatdiv">  
-                  <a :href="item.fromauthorurl" style="margin-left:10px;font-size:12px;" v-if="item.fromauthor!=''">From {{item.fromauthor}}</a>/
-                   <a :href="item.authorurl" style="font-size:12px;" v-if="item.author!=''">By {{item.author}}</a>
+                  <a :href="item.fromauthorurl" style="margin-left:10px;font-size:12px;" v-if="item.fromauthor!=''">By {{item.fromauthor}}</a>
+                   <a :href="item.authorurl" style="font-size:12px;" v-if="item.author!=''">/ From {{item.author}}</a>
                   <div class="authorpart">
                     <iframe style="margin-left:10px;margin-top:10px;"
                       frameborder="0" scrolling="0"  height="20px"
@@ -15,7 +16,8 @@
                   </div>
                   <p>{{item.description}}</p>
               </div>
-              <img :src="item.thumbUrl"/>
+              <!-- <img :src="item.thumbUrl"/> -->
+              
           </div>
 
             <div class="btncontent">
@@ -135,7 +137,8 @@
         {
             //alert(url)
             //window.open("https://www.leachchen.com/open.html?open="+url);
-             window.location.href = url;
+            // window.location.href = url;
+            window.open(url);        
         },
         onDownload(url)
         {
