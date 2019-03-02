@@ -1,11 +1,12 @@
 module.exports = {
-    title: 'Leach Chen', // 设置网站标题
+    title: '资源库', // 设置网站标题
     base: "/",
     head: [
          // add jquert and fancybox
-         ['script', { async:"",src:"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"}],
+         ['script', { async:"async",src:"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"}],
          ['script', {},"(adsbygoogle = window.adsbygoogle || []).push({google_ad_client: \"ca-pub-4924092018203651\",enable_page_level_ads: true});"],
-     ],
+         ['script', { async:"async",src:"//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"}],
+        ],
 
     plugins: [
     ['@vuepress/back-to-top', true],

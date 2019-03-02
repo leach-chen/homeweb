@@ -51,18 +51,24 @@
     
     <div class="commontent contentpart4">
       
+      <p style="color:#fff;">2019 © Leach Chen</p>
+      <span id="busuanzi_container_site_pv" style="color:#fff;font-size:12px;margin-left:10px;margin-top:5px;">访问量：<span id="busuanzi_value_site_pv"></span>次</span>
     </div>
   </el-container>
 </template>
 
 <script>
 // import {diyfun} from '../public/js/aa.js' //注意路径
+import {goRun} from '../public/js/busuanzi.pure.mini.js' //注意路径
 export default {
  data () {
   return {
    testvalue: ''
   }
  },
+  mounted () {
+    //goRun()
+    },
  methods:{
    goGithub(){
      this.$router.push("/github/android/all/");
@@ -125,7 +131,7 @@ export default {
     background-color: #f2f6fc;
     background: url("../public/img/contact-bg.jpg");
     background-attachment: fixed;
-    height: 300px;
+    height: 100px;
 }
 
 

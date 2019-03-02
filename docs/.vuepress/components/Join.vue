@@ -16,12 +16,26 @@
 
           <div class="joinpart">
             <div class="joinitem">
-              <p>微信群</p> 
+              <p>微信群(待更新)</p> 
               <img src="../public/img/wechatimg.jpg">
             </div>
 
             <div class="joinitem">
-              <p>公众号</p> 
+              <p>公众号（待更新）</p> 
+              <img src="../public/img/wechatimg.jpg">
+            </div>
+          </div>
+
+          <h2>捐助</h2>
+
+          <div class="joinpart">
+            <div class="joinitem">
+              <p>微信</p> 
+              <img src="../public/img/wechatimg.jpg">
+            </div>
+
+            <div class="joinitem">
+              <p>支付宝</p> 
               <img src="../public/img/wechatimg.jpg">
             </div>
           </div>
@@ -48,6 +62,7 @@
     background-attachment: fixed;
     min-height: 800px;
     flex-wrap: wrap;
+    margin-top: 50px;
   
 }
 
