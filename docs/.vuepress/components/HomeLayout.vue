@@ -59,7 +59,7 @@
 
 <script>
 // import {diyfun} from '../public/js/aa.js' //注意路径
-import {goRun} from '../public/js/busuanzi.pure.mini.js' //注意路径
+// import '../public/js/busuanzi.pure.mini.js' //注意路径
 export default {
  data () {
   return {
