@@ -41,6 +41,7 @@ var H5_T_HEXO ="h5_t_hexo"
 var H5_T_PHP ="h5_t_php"
 
 /*********************************Game type 定义**********************/
+var GAME_T_DEFAULT ="game_t_default"
 var GAME_T_SHOOT ="game_t_shoot"
 
 /*********************************Tool type 定义**********************/
@@ -98,6 +99,7 @@ H5_T_HEXO,
 H5_T_PHP,
 
 /*********************************Game type 定义**********************/
+GAME_T_DEFAULT,
 GAME_T_SHOOT,
 
 /*********************************Tool type 定义**********************/
