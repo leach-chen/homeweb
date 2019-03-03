@@ -24,7 +24,7 @@
     <div class="commontent contentpart2">
         <el-card class="box-card">
             <h1>Github 资源站</h1>
-            <p>在这里收集了Android，IOS，Flutter，Vue，H5完整项目，实用性高的组件。项目均包含源码及可在线预览效果，节省你的资源寻找及编译时间</p>
+            <p>在这里收集了Android，IOS，Flutter，Vue，H5完整项目，实用性高的组件。项目均包含源码及部分可直接预览效果，节省你的资源寻找及编译时间</p>
             <div class="imgcontent">
                 <img src="https://cdn.jsdelivr.net/gh/flutterchina/website@1.0/images/intellij/hot-reload.gif">
             </div>
@@ -39,7 +39,7 @@
             <h1>休闲一刻</h1>
             <p>在这里收集了众多可在线玩的游戏及源码</p>
             <div class="imgcontent">
-                 <img src="../public/img/gamebk.jpg">
+                 <img src="../public/img/gameshow.jpg">
             </div>
             <el-row>
                 <el-button type="primary" @click="goGame">立刻前往</el-button>

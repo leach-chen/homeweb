@@ -8,8 +8,8 @@
               <div class = "imgcover"></div>
               <img :src="item.thumbUrl"/>
               <div class = "imgfloatdiv">  
-                  <a :href="item.fromauthorurl" style="margin-left:10px;font-size:12px;" v-if="item.fromauthor!=''">By {{item.fromauthor}}</a>
-                   <a :href="item.authorurl" style="font-size:12px;" v-if="item.author!=''">/ From {{item.author}}</a>
+                  <a :href="item.fromauthorurl" target="_blank" style="margin-left:10px;font-size:12px;" v-if="item.fromauthor!=''">By {{item.fromauthor}}</a>
+                   <a :href="item.authorurl" target="_blank" style="font-size:12px;" v-if="item.author!=''">/ From {{item.author}}</a>
                   <div class="authorpart">
                     <iframe style="margin-left:10px;margin-top:10px;"
                       frameborder="0" scrolling="0"  height="20px"

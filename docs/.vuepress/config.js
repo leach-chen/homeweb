@@ -45,7 +45,7 @@ module.exports = {
         sidebar: {
             '/github/android/': [
                 {
-                    title: 'Android Github 合集',
+                    title: 'Android Github',
                     collapsable: false,
                     children: [
                         'all/',
@@ -55,7 +55,7 @@ module.exports = {
             ],
             '/github/ios/': [
                 {
-                    title: 'IOS Github 合集',
+                    title: 'IOS Github',
                     collapsable: false,
                     children: [
                         'all/',
@@ -65,7 +65,7 @@ module.exports = {
             ],
             '/github/flutter/': [
                 {
-                    title: 'Flutter Github 合集',
+                    title: 'Flutter Github',
                     collapsable: false,
                     children: [
                         'all/',
@@ -75,7 +75,7 @@ module.exports = {
             ],
             '/github/vue/': [
                 {
-                    title: 'Vue Github 合集',
+                    title: 'Vue Github',
                     collapsable: false,
                     children: [
                         'all/',
@@ -85,7 +85,7 @@ module.exports = {
             ],
             '/github/h5/': [
                 {
-                    title: 'H5 Github 合集',
+                    title: 'H5 Github',
                     collapsable: false,
                     children: [
                         'all/',

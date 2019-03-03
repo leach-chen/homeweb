@@ -10,14 +10,31 @@
             3：将您的资源发送至我的邮箱349763031@qq.com/leach.chen@gmail.com<br>
             <br>
             注：贡献的资源需包含资源的源码地址、描述、贡献者昵称，这些到时会显示在网页上
+            <highlight-code  slot="codeText" lang="vue">
+                {
+                  thumbUrl: "",
+                  previewUrl: "",
+                  downloadUrl: "",
+                  description:"",
+                  type:"",
+                  author:"",
+                  authorurl:"",
+                  repo:"",
+                  fromauthor:"",
+                  fromauthorurl:"",
+                  from:"",
+                  sold:""
+                },
+            </highlight-code>
+
             <br><br>
 
             <h2>欢迎加入</h2>
 
           <div class="joinpart">
             <div class="joinitem">
-              <p>微信群(待更新)</p> 
-              <img src="../public/img/wechatimg.jpg">
+              <p>微信群</p> 
+              <img src="../public/img/wechatgroup1.jpg">
             </div>
 
             <div class="joinitem">
@@ -36,7 +53,7 @@
 
             <div class="joinitem">
               <p>支付宝</p> 
-              <img src="../public/img/wechatimg.jpg">
+              <img src="../public/img/alipayimg.jpg">
             </div>
           </div>
         </el-card>
