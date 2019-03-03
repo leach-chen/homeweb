@@ -50,6 +50,7 @@ var TOOL_T_FULL ="tool_t_full"
 /*********************************From 定义**********************/
 var FROM_DEFAULT ="from_default"
 var FROM_GITHUB ="from_github"
+var FROM_MYGITHUB ="from_mygithub"
 
 
 
@@ -104,6 +105,7 @@ TOOL_T_FULL,
 
 /*********************************From 定义**********************/
 FROM_DEFAULT,
-FROM_GITHUB
+FROM_GITHUB,
+FROM_MYGITHUB
 
 }
