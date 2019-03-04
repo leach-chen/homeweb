@@ -75,7 +75,7 @@
         case co.PATH_FLUTTER_ALL:
           dataList = data.getFlutterAllData()
         break
-        case co.PATH_Flutter_FULL:
+        case co.PATH_FLUTTER_FULL:
           dataList = data.getFlutterFullData()
         break
 

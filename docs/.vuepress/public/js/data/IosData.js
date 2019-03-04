@@ -18,7 +18,7 @@ var fullIosDataList = [
   previewUrl: p_imagepreviewhost+"p_ios1_20190303.jpg",
   downloadUrl: "https://codeload.github.com/Aufree/ESTMusicPlayer/zip/master",
   description:"一款IOS音乐播放器",
-  type:co.T_VUE_FULL,
+  type:co.T_IOS_FULL,
   author:"Aufree",
   authorurl:"",
   repo:"ESTMusicPlayer",

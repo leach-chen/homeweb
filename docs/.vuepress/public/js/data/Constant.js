@@ -31,6 +31,9 @@ var T_ANDROID_FULL ="T_ANDROID_FULL"
 /*********************************IOS type 定义**********************/
 var T_IOS_FULL ="T_IOS_FULLproject"
 
+/*********************************Flutter type 定义**********************/
+var T_FLUTTER_FULL ="T_FLUTTER_FULL"
+
 /*********************************Vue type 定义**********************/
 var T_VUE_FULL ="T_VUE_FULLproject"
 
@@ -91,6 +94,9 @@ T_ANDROID_FULL,
 
 /*********************************IOS type 定义**********************/
 T_IOS_FULL,
+
+/*********************************Flutter type 定义**********************/
+T_FLUTTER_FULL,
 
 /*********************************Vue type 定义**********************/
 T_VUE_FULL,
