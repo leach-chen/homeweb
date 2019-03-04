@@ -1,4 +1,4 @@
-var host = "https://www.leachchen.com/games/"
+var host = "https://www.leachchen.com/storeh5game1/"
 
 var co= require('./Constant.js');
 
@@ -12,7 +12,7 @@ var shootGameDataList = [
       {
         thumbUrl: t_imagepreviewhost+"t_game1_20190303.jpg",
         previewUrl: host+"1/flappy/",
-        downloadUrl: host+"1/download.zip",
+        downloadUrl: host+"1/flappy.zip",
         originalUrl:"",
         description:"H5 Flappy Bird",
         type:co.GAME_T_DEFAULT,
