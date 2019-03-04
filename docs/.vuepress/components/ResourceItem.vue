@@ -150,7 +150,8 @@
         onDownload(url)
         {
             //alert(url)
-            window.location.href = url;
+            //window.location.href = url;
+            window.open("https://www.leachchen.com/webopen/open.html?open="+url);
         }
     }
    
