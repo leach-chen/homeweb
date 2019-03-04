@@ -4,8 +4,11 @@ var co= require('./Constant.js');
 
 var dataList = []
 
-var t_imagepreviewhost="http://www.leachchen.com/imagepreview/android/thumb/"
-var p_imagepreviewhost="http://www.leachchen.com/imagepreview/android/preview/"
+var t_imagepreviewhost="http://www.leachchen.com/storeimgpre1/android/thumb/"
+var p_imagepreviewhost="http://www.leachchen.com/storeimgpre1/android/preview/"
+
+var adminname = "admin"
+var adminurl =""
 
 var fullAndroidDataList = [
  // {thumbUrl: host+"001/thumb/demo.png",previewUrl: host+"001/source/",downloadUrl: host+"001/download/before.zip",description:"旅游风格的H5网站 Android",type:co.ANDROID_T_FULL,author:"leach-chen",authorurl:"",repo:"blog",fromauthor:"admin",fromauthorurl:"",from:co.FROM_GITHUB,sold:true},
@@ -19,8 +22,8 @@ var fullAndroidDataList = [
     author:"harjot-oberai",
     authorurl:"https://github.com/harjot-oberai",
     repo:"MusicDNA",
-    fromauthor:"admin",
-    fromauthorurl:"",
+    fromauthor:adminname,
+    fromauthorurl:adminurl,
     from:co.FROM_GITHUB,
     sold:true
   },

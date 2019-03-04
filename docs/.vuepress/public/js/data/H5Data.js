@@ -4,8 +4,11 @@ var co= require('./Constant.js');
 
 var dataList = []
 
-var t_imagepreviewhost="http://www.leachchen.com/imagepreview/h5/"
-var p_imagepreviewhost="http://www.leachchen.com/imagepreview/h5/"
+var t_imagepreviewhost="http://www.leachchen.com/storeimgpre1/h5/"
+var p_imagepreviewhost="http://www.leachchen.com/storeimgpre1/h5/"
+
+var adminname = "admin"
+var adminurl =""
 
 var cssDataList = [
     //{thumbUrl: host+"001/thumb/demo.png",previewUrl: host+"001/source/",downloadUrl: host+"001/download/before.zip",description:"旅游风格的H5网站 h5",type:co.H5_T_CSS,author:"leach-chen",authorurl:"",repo:"blog",fromauthor:"admin",fromauthorurl:"",from:co.FROM_GITHUB,sold:true},
@@ -18,8 +21,8 @@ var cssDataList = [
         author:"模板之家",
         authorurl:"http://www.cssmoban.com",
         repo:"",
-        fromauthor:"admin",
-        fromauthorurl:"",
+        fromauthor:adminname,
+        fromauthorurl:adminurl,
         from:co.FROM_DEFAULT,
         sold:true
       },
