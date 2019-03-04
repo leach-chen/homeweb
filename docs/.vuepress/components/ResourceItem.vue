@@ -2,6 +2,9 @@
     
 <div class="box-content clearfix">
 
+      <amp-auto-ads type="adsense"
+                data-ad-client="ca-pub-4924092018203651">
+      </amp-auto-ads>
        <el-card class="box-card" v-for="item in dataList" :key="item.Url" v-if="item.sold">
           <div class="imgfloatcontent">
                <!-- <div class="imgfloatcontent" :style="{ 'background': 'url(' +item.thumbUrl + ') no-repeat center center', 'background-size': '100% 100%'}"> -->
@@ -140,9 +143,9 @@
         onPreview:function(url)
         {
             //alert(url)
-            //window.open("https://www.leachchen.com/open.html?open="+url);
-            // window.location.href = url;
-            window.open(url);        
+            window.open("https://www.leachchen.com/webopen/open.html?open="+url+"/");
+            //window.location.href = url;
+            //window.open(url);        
         },
         onDownload(url)
         {
