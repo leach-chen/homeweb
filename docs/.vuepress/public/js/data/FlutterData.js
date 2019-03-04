@@ -18,7 +18,7 @@ var fullFlutterDataList = [
   previewUrl: p_imagepreviewhost+"p_flutter1_20190303.gif",
   downloadUrl: "https://codeload.github.com/alibaba/flutter-go/zip/master",
   description:"阿里Flutter学习项目，组件丰富",
-  type:co.VUE_T_FULL,
+  type:co.T_VUE_FULL,
   author:"alibaba",
   authorurl:"https://github.com/alibaba/",
   repo:"flutter-go",

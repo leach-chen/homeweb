@@ -18,7 +18,7 @@ var shootGameDataList = [
         downloadUrl: host+"1/flappy.zip",
         originalUrl:"",
         description:"H5 Flappy Bird",
-        type:co.GAME_T_DEFAULT,
+        type:co.T_GAME_DEFAULT,
         author:"html5tricks",
         authorurl:"https://www.html5tricks.com/",
         repo:"",
