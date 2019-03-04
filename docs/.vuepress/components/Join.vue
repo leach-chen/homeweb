@@ -9,7 +9,10 @@
             2：在Gitter聊天室提交您的资源<br><br>
             3：将您的资源发送至我的邮箱349763031@qq.com/leach.chen@gmail.com<br>
             <br>
-            注：贡献的资源需包含资源的源码地址、描述、贡献者昵称，这些到时会显示在网页上
+            <strong>注：
+            <br>1:资源上可展示资源提供者的昵称，资源提供者个人主页，
+            <br>2:还会展示资源原作者昵称及资源原作者个人主页。
+            <br>3:若需要展示这些，提供资源的时候别忘了提供这些内容哦</strong>
             <highlight-code  slot="codeText" lang="vue">
                 {
                   thumbUrl: "",

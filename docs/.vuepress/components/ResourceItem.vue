@@ -8,15 +8,17 @@
               <div class = "imgcover"></div>
               <img :src="item.thumbUrl"/>
               <div class = "imgfloatdiv">  
-                  <a :href="item.fromauthorurl" target="_blank" style="margin-left:10px;font-size:10px;" v-if="item.fromauthor!=''">By {{item.fromauthor}}</a>
+                  <div style="width:100%;text-align:left;">
+                   <a :href="item.fromauthorurl" target="_blank" style="margin-left:10px;font-size:10px;" v-if="item.fromauthor!=''">By {{item.fromauthor}}</a>
                    <a :href="item.authorurl" target="_blank" style="font-size:14px;" v-if="item.author!=''">/ From {{item.author}}</a>
+                   </div>
                   <div class="authorpart">
                     <iframe style="margin-left:10px;margin-top:10px;"
                       frameborder="0" scrolling="0"  height="20px"
                       :src="'https://ghbtns.com/github-btn.html?user='+item.author+'&repo='+item.repo+'&type=star&count=true'" v-if="item.author!=''&&item.repo!=''">
                     </iframe>  
                   </div>
-                  <p>{{item.description}}</p>
+                  <p style="text-align: left;">{{item.description}}</p>
               </div>
               <!-- <img :src="item.thumbUrl"/> -->
               
