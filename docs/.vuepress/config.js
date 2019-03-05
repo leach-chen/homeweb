@@ -54,6 +54,7 @@ module.exports = {
                     children: [
                         'all/',
                         'project/',
+                        'animation/',
                     ]
                 },
             ],

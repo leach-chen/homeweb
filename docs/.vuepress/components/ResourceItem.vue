@@ -63,7 +63,9 @@
         case co.PATH_ANDROID_FULL:
           dataList = data.getAndroidFullData()
         break
-
+        case co.PATH_ANDROID_ANIMATION:
+          dataList = data.getAndroidAnimationData()
+        break
 
 
         case co.PATH_IOS_ALL:
