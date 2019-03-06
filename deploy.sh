@@ -14,10 +14,10 @@ cd docs/.vuepress/
 #git commit -m 'update docs'
 #git push -f git@github.com:leach-chen/leach-chen.github.io.git master 不能执行该指令
 
-cp -r dist/* ../../../leach-chen.github.io
+cp -R dist/* ../../../leach-chen.github.io
 
 cd ../../../leach-chen.github.io
 
-commit.sh
+./commit.sh
 
 cd -
