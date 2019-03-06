@@ -22,7 +22,6 @@ var fullAndroidDataList = [
     repo:"MusicDNA",
     fromauthor:adminname,
     fromauthorurl:adminurl,
-    from:co.FROM_GITHUB,
     sold:true
   },
 ];
@@ -42,7 +41,6 @@ var animationAndroidDataList = [
      repo:"lottie-android",
      fromauthor:adminname,
      fromauthorurl:adminurl,
-     from:co.FROM_GITHUB,
      sold:true
    },
  ];

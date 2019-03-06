@@ -22,7 +22,6 @@ var fullFlutterDataList = [
   repo:"flutter-go",
   fromauthor:adminname,
   fromauthorurl:adminurl,
-  from:co.FROM_GITHUB,
   sold:true
 },
 

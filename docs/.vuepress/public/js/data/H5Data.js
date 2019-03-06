@@ -21,7 +21,6 @@ var cssDataList = [
         repo:"",
         fromauthor:adminname,
         fromauthorurl:adminurl,
-        from:co.FROM_DEFAULT,
         sold:true
       },
 ];

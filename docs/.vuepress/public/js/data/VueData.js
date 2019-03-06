@@ -20,7 +20,6 @@ var fullVueDataList = [
     repo:"vue-element-admin",
     fromauthor:adminname,
     fromauthorurl:adminurl,
-    from:co.FROM_GITHUB,
     sold:true
   },
 ];

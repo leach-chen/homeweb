@@ -52,14 +52,6 @@ var T_GAME_SHOOT ="T_GAME_SHOOT"
 var T_TOOL_FULL ="T_TOOL_FULL"
 
 
-/*********************************From 定义**********************/
-var FROM_DEFAULT ="from_default"
-var FROM_GITHUB ="from_github"
-var FROM_MYGITHUB ="from_mygithub"
-
-
-
-
 
 export{
     /*********************************Path定义**********************/
@@ -116,14 +108,5 @@ T_GAME_SHOOT,
 
 /*********************************Tool type 定义**********************/
 T_TOOL_FULL,
-
-
-
-
-
-/*********************************From 定义**********************/
-FROM_DEFAULT,
-FROM_GITHUB,
-FROM_MYGITHUB
 
 }

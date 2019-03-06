@@ -21,7 +21,6 @@ var fullIosDataList = [
   repo:"ESTMusicPlayer",
   fromauthor:adminname,
   fromauthorurl:adminurl,
-  from:co.FROM_GITHUB,
   sold:true
 },
 ];
