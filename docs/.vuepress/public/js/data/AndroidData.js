@@ -34,7 +34,7 @@ var animationAndroidDataList = [
    {
      thumbUrl: hostandroid+"2/t_android1_20190305.jpg",
      previewUrl: hostandroid+"2/p_android1_20190305.gif",
-     downloadUrl: "https://codeload.github.com/harjot-oberai/MusicDNA/zip/master",
+     downloadUrl: "https://codeload.github.com/Airbnb/lottie-android/zip/master",
      description:"airbnb的lottie酷炫动画库",
      type:co.T_ANDROID_ANIMATION,
      author:"Airbnb",
