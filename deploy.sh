@@ -21,3 +21,5 @@ cd ../../../leach-chen.github.io
 ./commit.sh
 
 cd -
+
+read -p "Press any key to continue." var
