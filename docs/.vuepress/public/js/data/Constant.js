@@ -27,30 +27,30 @@ var PATH_TOOL_ALL = "/tool/all/"
 var PATH_TOOL_PRACTICAL = "/tool/practical/"
 
 /*********************************Android type 定义**********************/
-var T_ANDROID_FULL ="T_ANDROID_FULL"
-var T_ANDROID_ANIMATION ="T_ANDROID_ANIMATION" //IOS type 定义
+var T_ANDROID_FULL ="T_ANDROID_FULL1"
+var T_ANDROID_ANIMATION ="T_ANDROID_ANIMATION1" //IOS type 定义
 
 
-var T_IOS_FULL ="T_IOS_FULLproject"
+var T_IOS_FULL ="T_IOS_FULL1"
 
 
-var T_FLUTTER_FULL ="T_FLUTTER_FULL" //Flutter type 定义
+var T_FLUTTER_FULL ="T_FLUTTER_FULL1" //Flutter type 定义
 
 
-var T_VUE_FULL ="T_VUE_FULLproject" //Vue type 定义
+var T_VUE_FULL ="T_VUE_FULL1" //Vue type 定义
 
 
-var T_H5_CSS ="T_H5_CSS"
-var T_H5_JEKYLL ="T_H5_JEKYLL"
-var T_H5_HEXO ="T_H5_HEXO"
-var T_H5_PHP ="T_H5_PHP" //H5 type 定义
+var T_H5_CSS ="T_H5_CSS1"
+var T_H5_JEKYLL ="T_H5_JEKYLL1"
+var T_H5_HEXO ="T_H5_HEXO1"
+var T_H5_PHP ="T_H5_PHP1" //H5 type 定义
 
 
-var T_GAME_DEFAULT ="T_GAME_DEFAULT"
-var T_GAME_SHOOT ="T_GAME_SHOOT" //Game type 定义
+var T_GAME_DEFAULT ="T_GAME_DEFAULT1"
+var T_GAME_SHOOT ="T_GAME_SHOOT1" //Game type 定义
 
 
-var T_TOOL_FULL ="T_TOOL_FULL" //Tool type 定义
+var T_TOOL_FULL ="T_TOOL_FULL1" //Tool type 定义
 
 
 

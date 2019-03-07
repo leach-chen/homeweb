@@ -13,6 +13,7 @@
               <div class = "imgfloatdiv">  
                   <div style="width:100%;text-align:left;">
                    <a :href="item.byauthorurl" target="_blank" style="margin-left:10px;font-size:10px;" v-if="item.byauthor!=''">By {{item.byauthor}}</a>
+                   <a :href="item.byauthorurl" target="_blank" style="margin-left:10px;font-size:10px;" v-else="item.byauthor!=''">By admin</a>
                    <a :href="item.authorurl" target="_blank" style="font-size:14px;" v-if="item.author!=''">/ From {{item.author}}</a>
                    <a :href="item.authorurl" target="_blank" style="font-size:14px;" v-else="item.gitauthor!=''">/ From {{item.gitauthor}}</a>
                    </div>
@@ -45,13 +46,19 @@
 
 
   var co = require('../public/js/data/Constant.js')
-  var data = require('../public/js/data/DataFactory.js')
-
+  
+  var android = require('../public/js/data/android/get_android_data.js')
+  var ios = require('../public/js/data/ios/get_ios_data.js')
+  var flutter = require('../public/js/data/flutter/get_flutter_data.js')
+  var vue = require('../public/js/data/vue/get_vue_data.js')
+  var website = require('../public/js/data/website/get_website_data.js')
+  var game = require('../public/js/data/game/get_game_data.js')
+  var tool = require('../public/js/data/tool/get_tool_data.js')
  export default {
     name: 'app',
     data () {
-      //alert(this.$route.path)
 
+      //alert(this.$route.path)
       var dataList = []
 
       var path = this.$route.path
@@ -59,74 +66,74 @@
       switch(path)
       {
         case co.PATH_ANDROID_ALL:
-          dataList = data.getAndroidAllData()
+          dataList = android.getAndroidAll()
         break
         case co.PATH_ANDROID_FULL:
-          dataList = data.getAndroidFullData()
+          dataList = android.getAndroidFull()
         break
         case co.PATH_ANDROID_ANIMATION:
-          dataList = data.getAndroidAnimationData()
+          dataList = android.getAndroidAnimation()
         break
 
 
         case co.PATH_IOS_ALL:
-          dataList = data.getIosAllData()
+          dataList = ios.getIosAll()
         break
         case co.PATH_IOS_FULL:
-          dataList = data.getIosFullData()
+          dataList = ios.getIosFull()
         break
 
 
 
         case co.PATH_FLUTTER_ALL:
-          dataList = data.getFlutterAllData()
+          dataList = flutter.getFlutterAll()
         break
         case co.PATH_FLUTTER_FULL:
-          dataList = data.getFlutterFullData()
+          dataList = flutter.getFlutterFull()
         break
 
 
 
         case co.PATH_VUE_ALL:
-          dataList = data.getVueAllData()
+          dataList = vue.getVueAll()
         break
         case co.PATH_VUE_FULL:
-          dataList = data.getVueFullData()
+          dataList = vue.getVueFull()
         break
 
 
 
         case co.PATH_TOOL_ALL:
-          dataList = data.getToolAllData()
+          dataList = tool.getToolAll()
         break
         case co.PATH_TOOL_PRACTICAL:
-          dataList = data.getToolPracticalData()
+          dataList = tool.getToolSynthesize()
         break
 
 
         case co.PATH_GAME_ALL:
-          dataList = data.getGameAllData()
+          dataList = game.getGameAll()
         break
         case co.PATH_GAME_SHOOT:
-          dataList = data.getGameShootData()
+          dataList = game.getGameSynthesize()
         break
 
 
 
         case co.PATH_H5_ALL:
-          dataList = data.getH5AllData()
+          dataList = website.getWebsiteAll()
         break
         case co.PATH_H5_CSS:
-          dataList = data.getH5CssData()
+          dataList = website.getWebsiteCss()
         break
         case co.PATH_H5_JKEYLL:
-          dataList = data.getH5JekyllData()
+          dataList = website.getWebsiteJekyll()
         break
         case co.PATH_H5_HEXO:
-          dataList = data.getH5HexoData()
+          dataList = website.getWebsiteHexo()
         break
         case co.PATH_H5_PHP:
-          dataList = data.getH5PhpData()
+          dataList = website.getWebsitePhp()
         break
       }
       return {
