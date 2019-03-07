@@ -12,13 +12,14 @@
               <img :src="item.thumbUrl"/>
               <div class = "imgfloatdiv">  
                   <div style="width:100%;text-align:left;">
-                   <a :href="item.fromauthorurl" target="_blank" style="margin-left:10px;font-size:10px;" v-if="item.fromauthor!=''">By {{item.fromauthor}}</a>
+                   <a :href="item.byauthorurl" target="_blank" style="margin-left:10px;font-size:10px;" v-if="item.byauthor!=''">By {{item.byauthor}}</a>
                    <a :href="item.authorurl" target="_blank" style="font-size:14px;" v-if="item.author!=''">/ From {{item.author}}</a>
+                   <a :href="item.authorurl" target="_blank" style="font-size:14px;" v-else="item.gitauthor!=''">/ From {{item.gitauthor}}</a>
                    </div>
                   <div class="authorpart">
                     <iframe style="margin-left:10px;margin-top:10px;"
                       frameborder="0" scrolling="0"  height="20px"
-                      :src="'https://ghbtns.com/github-btn.html?user='+item.author+'&repo='+item.repo+'&type=star&count=true'" v-if="item.author!=''&&item.repo!=''">
+                      :src="'https://ghbtns.com/github-btn.html?user='+item.gitauthor+'&repo='+item.gitrepo+'&type=star&count=true'" v-if="item.gitauthor!=''&&item.gitrepo!=''">
                     </iframe>  
                   </div>
                   <p style="text-align: left;">{{item.description}}</p>

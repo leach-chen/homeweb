@@ -24,9 +24,9 @@
                   type:"",
                   author:"",
                   authorurl:"",
-                  repo:"",
-                  fromauthor:"",
-                  fromauthorurl:"",
+                  gitrepo:"",
+                  byauthor:"",
+                  byauthorurl:"",
                   from:"",
                   sold:""
                 },
