@@ -7,9 +7,3 @@ router.get('/', function(req, res, next) {
 });
 
 module.exports = router;
-
-/* 导入mysql模块 */
-var mysql = require('mysql');
-var dbconfig = require('../db/DBConfig');
-var userSQL = require('../db/Usersql');
-var pool = mysql.createPool(dbconfig.mysql);     // 使用DBConfig.js的配置信息创建一个MySQL连接池
