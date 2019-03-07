@@ -26,33 +26,6 @@ var PATH_GAME_SHOOT = "/game/shoot/"
 var PATH_TOOL_ALL = "/tool/all/"
 var PATH_TOOL_PRACTICAL = "/tool/practical/"
 
-/*********************************Android type 定义**********************/
-var T_ANDROID_FULL ="T_ANDROID_FULL1"
-var T_ANDROID_ANIMATION ="T_ANDROID_ANIMATION1" //IOS type 定义
-
-
-var T_IOS_FULL ="T_IOS_FULL1"
-
-
-var T_FLUTTER_FULL ="T_FLUTTER_FULL1" //Flutter type 定义
-
-
-var T_VUE_FULL ="T_VUE_FULL1" //Vue type 定义
-
-
-var T_H5_CSS ="T_H5_CSS1"
-var T_H5_JEKYLL ="T_H5_JEKYLL1"
-var T_H5_HEXO ="T_H5_HEXO1"
-var T_H5_PHP ="T_H5_PHP1" //H5 type 定义
-
-
-var T_GAME_DEFAULT ="T_GAME_DEFAULT1"
-var T_GAME_SHOOT ="T_GAME_SHOOT1" //Game type 定义
-
-
-var T_TOOL_FULL ="T_TOOL_FULL1" //Tool type 定义
-
-
 
 export{
     /*********************************Path定义**********************/
@@ -80,34 +53,4 @@ PATH_GAME_SHOOT,
 
 PATH_TOOL_ALL,
 PATH_TOOL_PRACTICAL,
-
-
-
-
-/*********************************Android type 定义**********************/
-T_ANDROID_FULL,
-T_ANDROID_ANIMATION,
-
-/*********************************IOS type 定义**********************/
-T_IOS_FULL,
-
-/*********************************Flutter type 定义**********************/
-T_FLUTTER_FULL,
-
-/*********************************Vue type 定义**********************/
-T_VUE_FULL,
-
-/*********************************H5 type 定义**********************/
-T_H5_CSS,
-T_H5_JEKYLL,
-T_H5_HEXO,
-T_H5_PHP,
-
-/*********************************Game type 定义**********************/
-T_GAME_DEFAULT,
-T_GAME_SHOOT,
-
-/*********************************Tool type 定义**********************/
-T_TOOL_FULL,
-
 }
