@@ -1,4 +1,5 @@
-# 射击
+# 综合
+
 
 <ResourceItem/>
 

@@ -21,10 +21,10 @@ var PATH_VUE_FULL = "/github/vue/project/"
 
 
 var PATH_GAME_ALL = "/game/all/"
-var PATH_GAME_SHOOT = "/game/shoot/"
+var PATH_GAME_SYNT = "/game/synthesize/"
 
 var PATH_TOOL_ALL = "/tool/all/"
-var PATH_TOOL_PRACTICAL = "/tool/practical/"
+var PATH_TOOL_SYNT = "/tool/synthesize/"
 
 
 export{
@@ -49,8 +49,8 @@ PATH_VUE_ALL,
 PATH_VUE_FULL,
 
 PATH_GAME_ALL,
-PATH_GAME_SHOOT,
+PATH_GAME_SYNT,
 
 PATH_TOOL_ALL,
-PATH_TOOL_PRACTICAL,
+PATH_TOOL_SYNT,
 }

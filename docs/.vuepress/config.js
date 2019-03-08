@@ -108,7 +108,7 @@ module.exports = {
                     collapsable: false,
                     children: [
                         'all/',
-                        'shoot/',
+                        'synthesize/',
                     ]
                 },
             ],
@@ -119,7 +119,7 @@ module.exports = {
                     collapsable: false,
                     children: [
                         'all/',
-                        'practical/',
+                        'synthesize/',
                     ]
                 },
             ],

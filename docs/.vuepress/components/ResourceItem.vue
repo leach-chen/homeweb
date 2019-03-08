@@ -105,7 +105,7 @@
       //   case co.PATH_TOOL_ALL:
       //     dataList = tool.getToolAll()
       //   break
-      //   case co.PATH_TOOL_PRACTICAL:
+      //   case co.PATH_TOOL_SYNT:
       //     dataList = tool.getToolSynthesize()
       //   break
 
@@ -113,7 +113,7 @@
       //   case co.PATH_GAME_ALL:
       //     dataList = game.getGameAll()
       //   break
-      //   case co.PATH_GAME_SHOOT:
+      //   case co.PATH_GAME_SYNT:
       //     dataList = game.getGameSynthesize()
       //   break
 
@@ -179,13 +179,13 @@
 
 
         case co.PATH_TOOL_ALL:
-        case co.PATH_TOOL_PRACTICAL:
+        case co.PATH_TOOL_SYNT:
           this.getData(this.apitool)
         break
 
 
         case co.PATH_GAME_ALL:
-        case co.PATH_GAME_SHOOT:
+        case co.PATH_GAME_SYNT:
           this.getData(this.apigame)
         break
 
@@ -267,7 +267,7 @@
               case co.PATH_TOOL_ALL: 
                this.dataList=res.data.dataToolSynthesize1
                break
-              case co.PATH_TOOL_PRACTICAL:
+              case co.PATH_TOOL_SYNT:
                 this.dataList=res.data.dataToolSynthesize1
               break
 
@@ -275,7 +275,7 @@
               case co.PATH_GAME_ALL:
                 this.dataList=res.data.dataGameSynthesize1
               break
-              case co.PATH_GAME_SHOOT:
+              case co.PATH_GAME_SYNT:
                 this.dataList=res.data.dataGameSynthesize1
               break
 
