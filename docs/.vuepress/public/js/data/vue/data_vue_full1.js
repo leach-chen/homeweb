@@ -1,4 +1,5 @@
 var vue_full1 = [
+  //replace
   {
     thumbUrl:"https://www.leachchen.com/storevue1/1/vue1_1_t.jpg",
     previewUrl:"http://panjiachen.github.io/vue-element-admin",

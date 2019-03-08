@@ -1,4 +1,5 @@
 var game_synthesize1 = [
+  //replace
   {
     thumbUrl:"https://www.leachchen.com/storeh5game1/1/h5game1_1_t.jpg",
     previewUrl:"https://www.leachchen.com/storeh5game1/1/h5game1_1_p_flappy/",

@@ -1,4 +1,5 @@
 var ios_full1 = [
+  //replace
   {
     thumbUrl:"https://www.leachchen.com/storeios1/1/ios1_1_t.jpg",
     previewUrl:"https://www.leachchen.com/storeios1/1/ios1_1_p.jpg",

@@ -1,4 +1,5 @@
 var android_animation1 = [
+  //replace
   {
      thumbUrl:"https://www.leachchen.com/storeandroid1/2/android1_2_t.jpg",
      previewUrl:"https://www.leachchen.com/storeandroid1/2/android1_2_p.gif",
