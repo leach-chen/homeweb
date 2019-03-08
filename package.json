@@ -29,6 +29,7 @@
     "vue-highlight.js": "^2.2.0",
     "vue-resource": "^1.5.1",
     "vue-router": "^3.0.1",
+    "vue-server-renderer": "^2.6.6",
     "vue-template-compiler": "^2.6.6"
   }
 }
