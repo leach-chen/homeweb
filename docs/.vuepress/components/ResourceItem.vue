@@ -54,100 +54,157 @@
   var website = require('../public/js/data/website/get_website_data.js')
   var game = require('../public/js/data/game/get_game_data.js')
   var tool = require('../public/js/data/tool/get_tool_data.js')
+
  export default {
     name: 'app',
     data () {
-
       //alert(this.$route.path)
       var dataList = []
 
+      // var path = this.$route.path
+      // switch(path)
+      // {
+      //   case co.PATH_ANDROID_ALL:
+      //     dataList = android.getAndroidAll()
+      //   break
+      //   case co.PATH_ANDROID_FULL:
+      //     dataList = android.getAndroidFull()
+      //   break
+      //   case co.PATH_ANDROID_ANIMATION:
+      //     dataList = android.getAndroidAnimation()
+      //   break
+
+
+      //   case co.PATH_IOS_ALL:
+      //     dataList = ios.getIosAll()
+      //   break
+      //   case co.PATH_IOS_FULL:
+      //     dataList = ios.getIosFull()
+      //   break
+
+
+
+      //   case co.PATH_FLUTTER_ALL:
+      //     dataList = flutter.getFlutterAll()
+      //   break
+      //   case co.PATH_FLUTTER_FULL:
+      //     dataList = flutter.getFlutterFull()
+      //   break
+
+
+
+      //   case co.PATH_VUE_ALL:
+      //     dataList = vue.getVueAll()
+      //   break
+      //   case co.PATH_VUE_FULL:
+      //     dataList = vue.getVueFull()
+      //   break
+
+
+
+      //   case co.PATH_TOOL_ALL:
+      //     dataList = tool.getToolAll()
+      //   break
+      //   case co.PATH_TOOL_PRACTICAL:
+      //     dataList = tool.getToolSynthesize()
+      //   break
+
+
+      //   case co.PATH_GAME_ALL:
+      //     dataList = game.getGameAll()
+      //   break
+      //   case co.PATH_GAME_SHOOT:
+      //     dataList = game.getGameSynthesize()
+      //   break
+
+
+
+      //   case co.PATH_H5_ALL:
+      //     dataList = website.getWebsiteAll()
+      //   break
+      //   case co.PATH_H5_CSS:
+      //     dataList = website.getWebsiteCss()
+      //   break
+      //   case co.PATH_H5_JKEYLL:
+      //     dataList = website.getWebsiteJekyll()
+      //   break
+      //   case co.PATH_H5_HEXO:
+      //     dataList = website.getWebsiteHexo()
+      //   break
+      //   case co.PATH_H5_PHP:
+      //     dataList = website.getWebsitePhp()
+      //   break
+      // }
+      return {
+          dataList,
+          apiandroid:"https://www.leachchen.com/storedata1/android/android.js",
+          apiios:"https://www.leachchen.com/storedata1/ios/ios.js",
+          apiflutter:"https://www.leachchen.com/storedata1/flutter/flutter.js",
+          apivue:"https://www.leachchen.com/storedata1/vue/vue.js",
+          apigame:"https://www.leachchen.com/storedata1/game/game.js",
+          apitool:"https://www.leachchen.com/storedata1/tool/tool.js",
+          apiwebsite:"https://www.leachchen.com/storedata1/website/website.js"
+      }
+    },
+    created: function() {
       var path = this.$route.path
-      
       switch(path)
       {
         case co.PATH_ANDROID_ALL:
-          dataList = android.getAndroidAll()
-        break
         case co.PATH_ANDROID_FULL:
-          dataList = android.getAndroidFull()
-        break
         case co.PATH_ANDROID_ANIMATION:
-          dataList = android.getAndroidAnimation()
+          this.getData(this.apiandroid)
         break
 
 
         case co.PATH_IOS_ALL:
-          dataList = ios.getIosAll()
-        break
         case co.PATH_IOS_FULL:
-          dataList = ios.getIosFull()
+          this.getData(this.apiios)
         break
 
 
 
         case co.PATH_FLUTTER_ALL:
-          dataList = flutter.getFlutterAll()
-        break
         case co.PATH_FLUTTER_FULL:
-          dataList = flutter.getFlutterFull()
+           this.getData(this.apiflutter)
         break
 
 
 
         case co.PATH_VUE_ALL:
-          dataList = vue.getVueAll()
-        break
         case co.PATH_VUE_FULL:
-          dataList = vue.getVueFull()
+          this.getData(this.apivue)
         break
 
 
 
         case co.PATH_TOOL_ALL:
-          dataList = tool.getToolAll()
-        break
         case co.PATH_TOOL_PRACTICAL:
-          dataList = tool.getToolSynthesize()
+          this.getData(this.apitool)
         break
 
 
         case co.PATH_GAME_ALL:
-          dataList = game.getGameAll()
-        break
         case co.PATH_GAME_SHOOT:
-          dataList = game.getGameSynthesize()
+          this.getData(this.apigame)
         break
 
 
 
         case co.PATH_H5_ALL:
-          dataList = website.getWebsiteAll()
-        break
         case co.PATH_H5_CSS:
-          dataList = website.getWebsiteCss()
-        break
         case co.PATH_H5_JKEYLL:
-          dataList = website.getWebsiteJekyll()
-        break
         case co.PATH_H5_HEXO:
-          dataList = website.getWebsiteHexo()
-        break
         case co.PATH_H5_PHP:
-          dataList = website.getWebsitePhp()
+           this.getData(this.apiwebsite)
         break
-      }
-      return {
-          dataList,
       }
     },
     mounted () {
-
       //document.getElementById("imgfloatdiv").style.width= document.getElementById("imgfloat").width+"px";
       //document.getElementById("imgfloatdiv").style.height= document.getElementById("imgfloat").height+"px";
-
       //console.log(document.getElementById("imgfloat").width+"px")
     },
-
     methods:
     {
         onPreview:function(url)
@@ -162,7 +219,88 @@
             //alert(url)
             //window.location.href = url;
             window.open("https://www.leachchen.com/webopen/download.html?open="+url);
-        }
+        },
+        getData:function(api) {
+          var that = this;
+          this.$http.get(api).then(res=>{
+        
+          var path = this.$route.path
+            switch(path)
+            {
+              case co.PATH_ANDROID_ALL:
+                this.dataList=res.data.dataAndroidFull1.concat(res.data.dataAndroidAnimation1)
+               break;
+              case co.PATH_ANDROID_FULL:
+                this.dataList=res.data.dataAndroidFull1
+               break;
+              case co.PATH_ANDROID_ANIMATION:
+                 this.dataList=res.data.dataAndroidAnimation1
+               break
+
+
+              case co.PATH_IOS_ALL:
+                this.dataList=res.data.dataIosFull1
+              case co.PATH_IOS_FULL:
+                this.dataList=res.data.dataIosFull1
+              break
+
+
+
+              case co.PATH_FLUTTER_ALL:
+               this.dataList=res.data.dataFlutterFull1
+              break
+              case co.PATH_FLUTTER_FULL:
+                this.dataList=res.data.dataFlutterFull1
+              break
+
+
+
+              case co.PATH_VUE_ALL:
+                this.dataList=res.data.dataVueFull1
+              break
+              case co.PATH_VUE_FULL:
+                this.dataList=res.data.dataVueFull1
+              break
+
+
+
+              case co.PATH_TOOL_ALL: 
+               this.dataList=res.data.dataToolSynthesize1
+               break
+              case co.PATH_TOOL_PRACTICAL:
+                this.dataList=res.data.dataToolSynthesize1
+              break
+
+
+              case co.PATH_GAME_ALL:
+                this.dataList=res.data.dataGameSynthesize1
+              break
+              case co.PATH_GAME_SHOOT:
+                this.dataList=res.data.dataGameSynthesize1
+              break
+
+
+
+              case co.PATH_H5_ALL:
+                this.dataList=res.data.dataWebsiteCss1
+              break
+              case co.PATH_H5_CSS:
+                this.dataList=res.data.dataWebsiteCss1
+              break
+              case co.PATH_H5_JKEYLL:
+                
+              break
+              case co.PATH_H5_HEXO:
+                
+              break
+              case co.PATH_H5_PHP:
+               
+              break
+            }
+
+            
+          })
+      }
     }
    
   }

@@ -7,6 +7,8 @@ import Element from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 //import VueECharts from 'vue-echarts' //注册图表
 
+import VueResource from 'vue-resource'
+
 import '../.vuepress/public/css/index.css'
 
 
@@ -69,6 +71,7 @@ export default ({
   // ...做一些其他的应用级别的优化
   Vue.use(VueHighlightJS)
   Vue.use(Element)
+  Vue.use(VueResource)
   //Vue.component('chart', VueECharts)
 
   // try {
