@@ -1,4 +1,5 @@
 var android_full1 = [
+  //replace
   {
     thumbUrl:"https://www.leachchen.com/storeandroid1/1/android1_1_t.png",
     previewUrl:"https://www.leachchen.com/storeandroid1/1/android1_1_p.png",
