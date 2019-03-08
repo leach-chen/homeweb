@@ -63,7 +63,7 @@ do
 							echo "文件夹-->"${array[1]}" 不存在，将创建"
 							mkdir ${array[1]}	#创建文件夹1
 					fi
-					cd "../manager/dispense" #退出stroeandroid1文件夹
+					cd "../homeweb/resourcemanager" #退出stroeandroid1文件夹
 					#cp -arf $file ${array[0]}/${array[1]}
 					mv $file "../../"$firstpath/${array[1]} #将外面的文件剪切到storeandroid/1目录下	
 					echo "拷贝"	$file "文件到" $firstpath/${array[1]} "目录下"
