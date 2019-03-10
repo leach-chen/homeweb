@@ -13,9 +13,9 @@
               <div class = "imgfloatdiv">  
                   <div style="width:100%;text-align:left;">
                    <a :href="item.byauthorurl" target="_blank" style="margin-left:10px;font-size:10px;" v-if="item.byauthor!=''">By {{item.byauthor}}</a>
-                   <a :href="item.byauthorurl" target="_blank" style="margin-left:10px;font-size:10px;" v-else="item.byauthor!=''">By admin</a>
+                   <a :href="item.byauthorurl" target="_blank" style="margin-left:10px;font-size:10px;" v-else>By admin</a>
                    <a :href="item.authorurl" target="_blank" style="font-size:14px;" v-if="item.author!=''">/ From {{item.author}}</a>
-                   <a :href="item.authorurl" target="_blank" style="font-size:14px;" v-else="item.gitauthor!=''">/ From {{item.gitauthor}}</a>
+                   <a :href="item.authorurl" target="_blank" style="font-size:14px;" v-else>/ From {{item.gitauthor}}</a>
                    </div>
                   <div class="authorpart">
                     <iframe style="margin-left:10px;margin-top:10px;"
@@ -31,7 +31,8 @@
 
             <div class="btncontent">
                 <button class="btn1" v-on:click="onPreview(item.previewUrl)">预览效果</button>
-                <button class="btn2" v-on:click="onDownload(item.downloadUrl)">源码下载</button>
+                <button class="btn2" v-on:click="onDownload(item.downloadUrl)" v-if="isTool==false">源码下载</button>
+                <button class="btn2" v-on:click="onDownload(item.downloadUrl)" v-else>下载地址</button>
                 <!-- <el-button type="primary">预览效果</el-button>
                 <el-button type="primary">源码下载</el-button> -->
             </div>
@@ -59,82 +60,8 @@
     name: 'app',
     data () {
       //alert(this.$route.path)
+      var isTool=false;
       var dataList = []
-
-      // var path = this.$route.path
-      // switch(path)
-      // {
-      //   case co.PATH_ANDROID_ALL:
-      //     dataList = android.getAndroidAll()
-      //   break
-      //   case co.PATH_ANDROID_FULL:
-      //     dataList = android.getAndroidFull()
-      //   break
-      //   case co.PATH_ANDROID_ANIMATION:
-      //     dataList = android.getAndroidAnimation()
-      //   break
-
-
-      //   case co.PATH_IOS_ALL:
-      //     dataList = ios.getIosAll()
-      //   break
-      //   case co.PATH_IOS_FULL:
-      //     dataList = ios.getIosFull()
-      //   break
-
-
-
-      //   case co.PATH_FLUTTER_ALL:
-      //     dataList = flutter.getFlutterAll()
-      //   break
-      //   case co.PATH_FLUTTER_FULL:
-      //     dataList = flutter.getFlutterFull()
-      //   break
-
-
-
-      //   case co.PATH_VUE_ALL:
-      //     dataList = vue.getVueAll()
-      //   break
-      //   case co.PATH_VUE_FULL:
-      //     dataList = vue.getVueFull()
-      //   break
-
-
-
-      //   case co.PATH_TOOL_ALL:
-      //     dataList = tool.getToolAll()
-      //   break
-      //   case co.PATH_TOOL_SYNT:
-      //     dataList = tool.getToolSynthesize()
-      //   break
-
-
-      //   case co.PATH_GAME_ALL:
-      //     dataList = game.getGameAll()
-      //   break
-      //   case co.PATH_GAME_SYNT:
-      //     dataList = game.getGameSynthesize()
-      //   break
-
-
-
-      //   case co.PATH_H5_ALL:
-      //     dataList = website.getWebsiteAll()
-      //   break
-      //   case co.PATH_H5_CSS:
-      //     dataList = website.getWebsiteCss()
-      //   break
-      //   case co.PATH_H5_JKEYLL:
-      //     dataList = website.getWebsiteJekyll()
-      //   break
-      //   case co.PATH_H5_HEXO:
-      //     dataList = website.getWebsiteHexo()
-      //   break
-      //   case co.PATH_H5_PHP:
-      //     dataList = website.getWebsitePhp()
-      //   break
-      // }
       return {
           dataList,
           apiandroid:"https://www.leachchen.com/storedata1/android/android.js",
@@ -143,7 +70,8 @@
           apivue:"https://www.leachchen.com/storedata1/vue/vue.js",
           apigame:"https://www.leachchen.com/storedata1/game/game.js",
           apitool:"https://www.leachchen.com/storedata1/tool/tool.js",
-          apiwebsite:"https://www.leachchen.com/storedata1/website/website.js"
+          apiwebsite:"https://www.leachchen.com/storedata1/website/website.js",
+          isTool
       }
     },
     created: function() {
@@ -199,6 +127,13 @@
            this.getData(this.apiwebsite)
         break
       }
+
+      if(path.search("tool") != -1 )
+      {
+        this.isTool = true
+      }else{
+        this.isTool = false
+      }
     },
     mounted () {
       //document.getElementById("imgfloatdiv").style.width= document.getElementById("imgfloat").width+"px";
@@ -218,7 +153,12 @@
         {
             //alert(url)
             //window.location.href = url;
-            window.open("https://www.leachchen.com/webopen/download.html?open="+url);
+            if(this.isTool == true)
+            {
+                window.open("https://www.leachchen.com/webopen/open.html?open="+url+"/");
+            }else{
+                window.open("https://www.leachchen.com/webopen/download.html?open="+url);
+            }
         },
         getData:function(api) {
 
