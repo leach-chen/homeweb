@@ -17,7 +17,7 @@
             也欢迎大家一起贡献资源，让小仓库丰富起来，也让你的资源让更多人知道。资源若有侵犯原作者权益，请联系我进行下架。
             
             <div class="imgcontent">
-                <img src="../public/img/bk1.jpg">
+                <img :src="imgurlbk1">
             </div>
             <el-row>
                 <el-button type="primary" @click="goContribute">贡献资源</el-button>
@@ -67,12 +67,26 @@
 export default {
  data () {
   return {
-   testvalue: ''
+   testvalue: '',
+   imgurlbk1: ''
   }
  },
-  mounted () {
-    //goRun()
-    },
+ mounted () {
+  //goRun()
+ },
+  created: function() {
+
+        var timestamp = (new Date()).getTime();
+        var date = new Date();
+        var year = date.getFullYear();
+        var month = date.getMonth()+1;
+        var day = date.getDate();
+        var hour = date.getHours();
+        var minute = date.getMinutes();
+        var second = date.getSeconds();
+
+        this.imgurlbk1 = "https://www.leachchen.com/storeother/img/bk1.jpg"+"?time="+year+month+day
+  },
  methods:{
    goGithub(){
      this.$router.push("/github/android/all/");
