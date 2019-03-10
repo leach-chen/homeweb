@@ -39,12 +39,12 @@
           <div class="joinpart">
             <div class="joinitem">
               <p>微信群</p> 
-              <img src="../public/img/wechatgroup1.jpg">
+              <img :src="imgurlgroup">
             </div>
 
             <div class="joinitem">
               <p>公众号（待更新）</p> 
-              <img src="../public/img/wechatimg.jpg">
+              <img :src="imgurlgongzhong">
             </div>
           </div>
 
@@ -65,6 +65,35 @@
     </div>
   </div>
 </template>
+
+<script>
+ export default {
+    name: 'app',
+    data () {
+      var imgurlgroup=""
+      var imgurlgongzhong=""
+      return{
+        imgurlgroup,
+        imgurlgongzhong
+      }
+    },
+    created: function() {
+    
+         var timestamp = (new Date()).getTime();
+          var date = new Date();
+          var year = date.getFullYear();
+          var month = date.getMonth()+1;
+          var day = date.getDate();
+          var hour = date.getHours();
+          var minute = date.getMinutes();
+          var second = date.getSeconds();
+
+          this.imgurlgroup = "https://www.leachchen.com/storeother/img/wechatgroup.jpg"+"?time="+year+month+day+hour+minute
+          this.imgurlgongzhong = "https://www.leachchen.com/storeother/img/wechatgongzhong.jpg"+"?time="+year+month+day+hour+minute
+
+    }
+ }
+</script>
 
 
 
