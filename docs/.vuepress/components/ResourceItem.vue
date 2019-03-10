@@ -30,7 +30,8 @@
           </div>
 
             <div class="btncontent">
-                <button class="btn1" v-on:click="onPreview(item.previewUrl)">预览效果</button>
+                <button class="btn1" v-on:click="onPreview(item.previewUrl)" v-if="isGame==false">预览效果</button>
+                <button class="btn1" v-on:click="onPreview(item.previewUrl)" v-else>马上挑战</button>
                 <button class="btn2" v-on:click="onDownload(item.downloadUrl)" v-if="isTool==false">源码下载</button>
                 <button class="btn2" v-on:click="onDownload(item.downloadUrl)" v-else>下载地址</button>
                 <!-- <el-button type="primary">预览效果</el-button>
@@ -60,6 +61,7 @@
     name: 'app',
     data () {
       //alert(this.$route.path)
+      var isGame=false;
       var isTool=false;
       var dataList = []
       return {
@@ -71,6 +73,7 @@
           apigame:"https://www.leachchen.com/storedata1/game/game.js",
           apitool:"https://www.leachchen.com/storedata1/tool/tool.js",
           apiwebsite:"https://www.leachchen.com/storedata1/website/website.js",
+          isGame,
           isTool
       }
     },
@@ -81,6 +84,7 @@
         case co.PATH_ANDROID_ALL:
         case co.PATH_ANDROID_FULL:
         case co.PATH_ANDROID_ANIMATION:
+        case co.PATH_ANDROID_VIEW:
           this.getData(this.apiandroid)
         break
 
@@ -134,6 +138,15 @@
       }else{
         this.isTool = false
       }
+
+      
+      if(path.search("game") != -1 )
+      {
+        this.isGame = true
+      }else{
+        this.isGame = false
+      }
+
     },
     mounted () {
       //document.getElementById("imgfloatdiv").style.width= document.getElementById("imgfloat").width+"px";
@@ -180,13 +193,16 @@
             switch(path)
             {
               case co.PATH_ANDROID_ALL:
-                this.dataList=res.data.dataAndroidFull1.concat(res.data.dataAndroidAnimation1)
+                this.dataList=res.data.dataAndroidFull1.concat(res.data.dataAndroidAnimation1).concat(res.data.dataAndroidView1)
                break;
               case co.PATH_ANDROID_FULL:
                 this.dataList=res.data.dataAndroidFull1
                break;
               case co.PATH_ANDROID_ANIMATION:
                  this.dataList=res.data.dataAndroidAnimation1
+               break
+               case co.PATH_ANDROID_VIEW:
+               this.dataList=res.data.dataAndroidView1
                break
 
 
