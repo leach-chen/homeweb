@@ -17,6 +17,7 @@
     "vuepress": "^1.0.0-alpha.39"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "echarts": "^4.1.0",
     "element-ui": "^2.5.4",
     "highlight.js": "^9.12.0",

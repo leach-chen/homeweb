@@ -187,8 +187,8 @@
           api = api+"?time="+year+month+day+hour+minute
           
           var that = this;
-          this.$http.get(api).then(res=>{
-        
+          //this.$http.get(api).then(res=>{
+          this.$axioshttp.get(api).then(res=>{
           var path = this.$route.path
             switch(path)
             {

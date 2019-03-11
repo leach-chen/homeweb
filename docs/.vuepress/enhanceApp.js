@@ -9,6 +9,8 @@ import 'element-ui/lib/theme-chalk/index.css'
 
 import VueResource from 'vue-resource'
 
+import axios from 'axios'
+
 import '../.vuepress/public/css/index.css'
 
 
@@ -69,9 +71,11 @@ export default ({
   siteData,// 站点元数据
 }) => {
   // ...做一些其他的应用级别的优化
+  Vue.prototype.$axioshttp = axios;
   Vue.use(VueHighlightJS)
   Vue.use(Element)
   Vue.use(VueResource)
+  Vue.use(axios)
   //Vue.component('chart', VueECharts)
 
   // try {
