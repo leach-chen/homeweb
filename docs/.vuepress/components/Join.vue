@@ -43,7 +43,7 @@
             </div>
 
             <div class="joinitem">
-              <p>公众号（待更新）</p> 
+              <p>公众号</p> 
               <img :src="imgurlgongzhong">
             </div>
           </div>
