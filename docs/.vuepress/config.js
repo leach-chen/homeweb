@@ -56,6 +56,8 @@ module.exports = {
                         'project/',
                         'animation/',
                         'view/',
+                        'synthesize/',
+                        'architecture/',
                     ]
                 },
             ],

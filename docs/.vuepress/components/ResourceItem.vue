@@ -85,6 +85,8 @@
         case co.PATH_ANDROID_FULL:
         case co.PATH_ANDROID_ANIMATION:
         case co.PATH_ANDROID_VIEW:
+        case co.PATH_ANDROID_SYNT:
+        case co.PATH_ANDROID_ARCH:
           this.getData(this.apiandroid)
         break
 
@@ -190,10 +192,13 @@
           //this.$http.get(api).then(res=>{
           this.$axioshttp.get(api).then(res=>{
           var path = this.$route.path
+
             switch(path)
             {
               case co.PATH_ANDROID_ALL:
-                this.dataList=res.data.dataAndroidFull1.concat(res.data.dataAndroidAnimation1).concat(res.data.dataAndroidView1)
+                this.dataList=res.data.dataAndroidFull1.concat(res.data.dataAndroidAnimation1)
+                .concat(res.data.dataAndroidView1).concat(res.data.dataAndroidSynthesize1)
+                .concat(res.data.dataAndroidArchitecture1)
                break;
               case co.PATH_ANDROID_FULL:
                 this.dataList=res.data.dataAndroidFull1
@@ -204,7 +209,12 @@
                case co.PATH_ANDROID_VIEW:
                this.dataList=res.data.dataAndroidView1
                break
-
+               case co.PATH_ANDROID_SYNT:
+               this.dataList=res.data.dataAndroidSynthesize1
+               break
+              case co.PATH_ANDROID_SYNT:
+               this.dataList=res.data.dataAndroidArchitecture1
+               break
 
               case co.PATH_IOS_ALL:
                 this.dataList=res.data.dataIosFull1
