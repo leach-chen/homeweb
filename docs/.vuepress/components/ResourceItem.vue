@@ -212,7 +212,7 @@
                case co.PATH_ANDROID_SYNT:
                this.dataList=res.data.dataAndroidSynthesize1
                break
-              case co.PATH_ANDROID_SYNT:
+              case co.PATH_ANDROID_ARCH:
                this.dataList=res.data.dataAndroidArchitecture1
                break
 
