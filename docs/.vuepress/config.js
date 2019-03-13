@@ -24,10 +24,10 @@ module.exports = {
     ],
     themeConfig: { //主题配置
         //添加导航栏
-        algolia: {
-            apiKey: 'eb9a770d84c8a6f01e3a5a45f8e9ae27',
-            indexName: 'leachchen'
-        },
+        // algolia: {
+        //     apiKey: 'eb9a770d84c8a6f01e3a5a45f8e9ae27',
+        //     indexName: 'leachchen'
+        // },
         nav: [
             { text: '主页', link: '/' },
             {
