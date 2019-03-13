@@ -5,6 +5,14 @@
       <amp-auto-ads type="adsense"
                 data-ad-client="ca-pub-4924092018203651">
       </amp-auto-ads>
+
+       <div class="container">
+          <form action="" class="parent">
+              <input type="text" class="search" placeholder="搜索">
+              <input type="button" name="" id="" class="btn">
+          </form>
+       </div>
+
        <el-card class="box-card" v-for="item in dataList" :key="item.Url" v-if="item.sold">
           <div class="imgfloatcontent">
                <!-- <div class="imgfloatcontent" :style="{ 'background': 'url(' +item.thumbUrl + ') no-repeat center center', 'background-size': '100% 100%'}"> -->
@@ -317,4 +325,36 @@
    flex-direction: row;
    align-items: center;
  }
+
+
+
+  * {
+    margin: 0;
+    padding: 0;
+}
+.container {
+}
+.parent {
+    position: relative;
+}
+.search {
+    width: 300px;
+    height: 40px;
+    border-radius: 18px;
+    outline: none;
+    border: 1px solid #ccc;
+    padding-left: 20px;
+    position: absolute;
+}
+.btn {
+    height: 35px;
+    width: 35px;
+    position: absolute;
+   
+    top: 6px;
+    left: 285px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
 </style>

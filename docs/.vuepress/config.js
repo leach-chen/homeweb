@@ -30,6 +30,7 @@ module.exports = {
         // },
         nav: [
             { text: '主页', link: '/' },
+            { text: '搜索', link: '/search/' },
             {
                 text: 'Github资源',
                 items: [
