@@ -10,6 +10,9 @@ module.exports = {
          
          ['script', { async:"async",src:"//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"}],
          ['script', {},"var _hmt = _hmt || [];(function() {var hm = document.createElement(\"script\");hm.src = \"https://hm.baidu.com/hm.js?0447a7b7b5fc544c1a27e5675a8e5a6c\";var s = document.getElementsByTagName(\"script\")[0]; s.parentNode.insertBefore(hm, s);})();"],         
+        
+        
+         ['script', {src:"https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"}],
         ],
 
     plugins: [
@@ -20,11 +23,11 @@ module.exports = {
     }],
     ],
     themeConfig: { //主题配置
-        // 添加导航栏
-        // algolia: {
-        //     apiKey: 'eb9a770d84c8a6f01e3a5a45f8e9ae27',
-        //     indexName: 'leachchen'
-        // },
+        //添加导航栏
+        algolia: {
+            apiKey: 'eb9a770d84c8a6f01e3a5a45f8e9ae27',
+            indexName: 'leachchen'
+        },
         nav: [
             { text: '主页', link: '/' },
             {
