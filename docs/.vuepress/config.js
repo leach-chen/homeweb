@@ -28,9 +28,10 @@ module.exports = {
         //     apiKey: 'eb9a770d84c8a6f01e3a5a45f8e9ae27',
         //     indexName: 'leachchen'
         // },
+        search: true,
         nav: [
             { text: '主页', link: '/' },
-            { text: '搜索', link: '/search/' },
+            // { text: '搜索', link: '/search/' },
             {
                 text: 'Github资源',
                 items: [
@@ -51,6 +52,12 @@ module.exports = {
         ],
 
         sidebar: {
+            // '/search/': [
+            //     {
+            //         title: '资源搜索',
+            //         collapsable: false,
+            //     }
+            // ],
             '/github/android/': [
                 {
                     title: 'Android Github',
