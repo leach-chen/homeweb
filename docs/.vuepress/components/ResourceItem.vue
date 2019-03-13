@@ -175,6 +175,29 @@
                 window.open("https://www.leachchen.com/webopen/download.html?open="+url);
             }
         },
+    
+        compare:function(property){
+          return function(a,b){
+              var value1 = a[property];
+              var value2 = b[property];
+
+              if(value1 > value2)
+              {
+                return -1  //降序
+              }else if(value1 < value2)
+              {
+                return 0
+              }else if(value1 == value2)
+              {
+                return 0
+              }
+          }
+        }, 
+    
+        sortData:function()
+        {
+          this.dataList = this.dataList.sort(this.compare('id'))      
+        },
         getData:function(api) {
 
           var timestamp = (new Date()).getTime();
@@ -275,8 +298,7 @@
                
               break
             }
-
-            
+            this.sortData()
           })
       }
     }
