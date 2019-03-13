@@ -82,7 +82,8 @@
           apiwebsite:"https://www.leachchen.com/storedata1/website/website.js",
           isGame,
           isTool,
-          input: ''
+          input: '',
+          tmpDataList:[]
       }
     },
     created: function() {
@@ -216,7 +217,8 @@
     
         sortData:function()
         {
-          this.dataList = this.dataList.sort(this.compare('id'))      
+          this.dataList = this.dataList.sort(this.compare('id'));        
+          this.tmpDataList = this.dataList;
         },
         getData:function(api) {
 
@@ -325,10 +327,14 @@
       {
           var client = algoliasearch("XFVALIR0TX", 'eb9a770d84c8a6f01e3a5a45f8e9ae27');
           var contact_index = client.initIndex('leachchen');
-         
-          contact_index.search(this.input, (err, contacts) =>{
-              this.dataList=contacts.hits
-          });
+          if(this.input == "")
+          {
+             this.dataList = this.tmpDataList;
+          }else{
+            contact_index.search(this.input, (err, contacts) =>{
+                this.dataList=contacts.hits
+            });
+          }
       }
     }
    
