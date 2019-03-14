@@ -13,6 +13,10 @@ module.exports = {
         
         
          ['script', {src:"https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"}],
+
+         ['script', {src:"https://www.leachchen.com/storedata1/other/js/vconsole.min.js"}],
+         
+         ['script', {},"var vConsole = new VConsole();"],
         ],
 
     plugins: [

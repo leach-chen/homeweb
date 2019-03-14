@@ -48,14 +48,7 @@
 </template>
 
 <script>
- 
-  require('../public/js/vconsole.min.js')
-
-  var vConsole = new VConsole();
-
-
   var co = require('../public/js/data/Constant.js')
-  
   var android = require('../public/js/data/android/get_android_data.js')
   var ios = require('../public/js/data/ios/get_ios_data.js')
   var flutter = require('../public/js/data/flutter/get_flutter_data.js')
@@ -71,7 +64,7 @@
       var isGame=false;
       var isTool=false;
       var isShowTag=false;
-      var dataList = []
+      var dataList = [];
       return {
           dataList,
           apiandroid:"https://www.leachchen.com/storedata1/android/android.js",
