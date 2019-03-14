@@ -53,6 +53,10 @@
 </template>
 
 <script>
+ 
+  require('../public/js/vconsole.min.js')
+
+  var vConsole = new VConsole();
 
 
   var co = require('../public/js/data/Constant.js')
@@ -173,10 +177,10 @@
       var path = this.$route.path
       if(path == co.PATH_SEARCH)
       {
-        document.getElementById("searchcontainerid").style.display= "visible"; 
+        //document.getElementById("searchcontainerid").style.display= "visible"; 
        
       }else{
-        document.getElementById("searchcontainerid").style.display= "none"; 
+        //document.getElementById("searchcontainerid").style.display= "none"; 
       }
     },
     methods:
