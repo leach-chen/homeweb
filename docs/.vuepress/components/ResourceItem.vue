@@ -1,11 +1,6 @@
 <template>
     
 <div class="box-content clearfix">
-
-      <amp-auto-ads type="adsense"
-                data-ad-client="ca-pub-4924092018203651">
-      </amp-auto-ads>
-
        <div class="searchcontainer">
           <el-input v-model="input" placeholder="智能全站资源搜索" v-on:input ="search"></el-input>
           <a target="_blank" href="https://www.algolia.com/docsearch" class="algolia-search-link" >

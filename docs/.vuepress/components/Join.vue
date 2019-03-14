@@ -1,9 +1,6 @@
 <template>
 
   <div class="joincontent">
-    <amp-auto-ads type="adsense"
-              data-ad-client="ca-pub-4924092018203651">
-    </amp-auto-ads>
     <div class="joinboxcontent content1">
         <el-card class="box-card-join">
             <h2>贡献资源</h2>
