@@ -39,6 +39,7 @@
         </el-card>
     </div>
 
+
     <div class="commontent contentpart3">
         <el-card class="box-card">
             <h1>休闲一刻</h1>
@@ -48,11 +49,17 @@
             </div>
             <el-row>
                 <el-button type="primary" @click="goGame">立刻前往</el-button>
-            </el-row>
+            </el-row>            
+        <ins class="adsbygoogle"
+          style="display:block"
+          data-ad-client="ca-pub-4924092018203651"
+          data-ad-slot="4765483933"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
         </el-card>
     </div>
 
-    
+
     
     <div class="commontent contentpart4">
       

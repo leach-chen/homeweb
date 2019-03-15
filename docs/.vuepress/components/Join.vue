@@ -58,6 +58,13 @@
               <img src="../public/img/alipayimg.jpg">
             </div>
           </div>
+
+          <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-4924092018203651"
+            data-ad-slot="4765483933"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
         </el-card>
     </div>
   </div>
