@@ -7,6 +7,13 @@
           <img style="height:12px;"src="../public/img/Algolia_logo_bg-white.svg" alt="algolia-logo" class="algolia-search-logo"></a>
        </div>
 
+       <ins class="adsbygoogle"
+          style="display:block"
+          data-ad-client="ca-pub-4924092018203651"
+          data-ad-slot="4765483933"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+
        <el-card class="box-card" v-for="item in dataList" :key="item.Url" v-if="item.sold">
           <div class="imgfloatcontent">
                <!-- <div class="imgfloatcontent" :style="{ 'background': 'url(' +item.thumbUrl + ') no-repeat center center', 'background-size': '100% 100%'}"> -->
@@ -42,12 +49,6 @@
             </div>
        </el-card>
 
-       <ins class="adsbygoogle"
-          style="display:block"
-          data-ad-client="ca-pub-4924092018203651"
-          data-ad-slot="4765483933"
-          data-ad-format="auto"
-          data-full-width-responsive="true"></ins>
 </div>
 
 </template>
