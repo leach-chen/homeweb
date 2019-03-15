@@ -2,9 +2,9 @@
 
   <el-container direction="vertical">
 
-    <amp-auto-ads type="adsense"
+    <!-- <amp-auto-ads type="adsense"
               data-ad-client="ca-pub-4924092018203651">
-    </amp-auto-ads>
+    </amp-auto-ads> -->
     
     <div class="commontent contentpart1">
         <el-card class="box-card">
