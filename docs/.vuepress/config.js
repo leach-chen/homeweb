@@ -12,7 +12,7 @@ module.exports = {
         //for auto end
 
         ['script', { async:"async",src:"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"}],
-        ['script', {},"(adsbygoogle = window.adsbygoogle || []).push({});"],
+        //['script', {},"(adsbygoogle = window.adsbygoogle || []).push({});"],
 
 
 

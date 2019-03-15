@@ -175,6 +175,8 @@
       }else{
         //document.getElementById("searchcontainerid").style.display= "none"; 
       }
+
+      (adsbygoogle = window.adsbygoogle || []).push({});
     },
     methods:
     {

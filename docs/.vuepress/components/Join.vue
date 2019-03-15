@@ -44,6 +44,13 @@
               <img :src="imgurlgongzhong">
             </div>
           </div>
+          
+          <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-4924092018203651"
+            data-ad-slot="4765483933"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
 
           <h2>捐助</h2>
 
@@ -80,6 +87,10 @@
         imgurlgroup,
         imgurlgongzhong
       }
+    },
+    mounted () {
+      //goRun()
+      (adsbygoogle = window.adsbygoogle || []).push({});
     },
     created: function() {
     

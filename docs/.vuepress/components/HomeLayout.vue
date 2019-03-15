@@ -36,6 +36,13 @@
             <el-row>
                   <el-button type="primary" @click="goGithub">探索资源</el-button>
             </el-row>
+            
+          <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-4924092018203651"
+            data-ad-slot="4765483933"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
         </el-card>
     </div>
 
@@ -81,6 +88,7 @@ export default {
  },
  mounted () {
   //goRun()
+  (adsbygoogle = window.adsbygoogle || []).push({});
  },
   created: function() {
 
