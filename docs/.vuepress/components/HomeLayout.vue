@@ -5,7 +5,7 @@
     <!-- <amp-auto-ads type="adsense"
               data-ad-client="ca-pub-4924092018203651">
     </amp-auto-ads> -->
-    
+
     <div class="commontent contentpart1">
         <el-card class="box-card">
             <h1>资源小仓库</h1>
@@ -21,7 +21,7 @@
                 <img :src="imgurlbk1">
             </div>
             <el-row>
-                <el-button type="primary" @click="goContribute">贡献资源</el-button>
+                <el-button type="primary" @click="goGithub">探索资源</el-button>
             </el-row>
         </el-card>
     </div>
@@ -34,15 +34,10 @@
                 <img src="https://cdn.jsdelivr.net/gh/flutterchina/website@1.0/images/intellij/hot-reload.gif">
             </div>
             <el-row>
-                  <el-button type="primary" @click="goGithub">探索资源</el-button>
+                  <el-button type="primary" @click="goContribute">贡献资源</el-button>
             </el-row>
-            
-          <ins class="adsbygoogle"
-            style="display:block"
-            data-ad-client="ca-pub-4924092018203651"
-            data-ad-slot="4765483933"
-            data-ad-format="auto"
-            data-full-width-responsive="true"></ins>
+
+        <Adsense></Adsense>
         </el-card>
     </div>
 
@@ -56,20 +51,14 @@
             </div>
             <el-row>
                 <el-button type="primary" @click="goGame">立刻前往</el-button>
-            </el-row>            
-        <ins class="adsbygoogle"
-          style="display:block"
-          data-ad-client="ca-pub-4924092018203651"
-          data-ad-slot="4765483933"
-          data-ad-format="auto"
-          data-full-width-responsive="true"></ins>
+            </el-row>
         </el-card>
     </div>
 
 
-    
+
     <div class="commontent contentpart4">
-      
+
       <p style="color:#fff;">2019 © Leach Chen</p>
       <span id="busuanzi_container_site_pv" style="color:#fff;font-size:12px;margin-left:10px;margin-top:5px;">访问量：<span id="busuanzi_value_site_pv"></span>次</span>
     </div>
@@ -87,8 +76,7 @@ export default {
   }
  },
  mounted () {
-  //goRun()
-  (adsbygoogle = window.adsbygoogle || []).push({});
+
  },
   created: function() {
 
@@ -142,7 +130,7 @@ export default {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-  
+
 }
 
 .contentpart1{
@@ -173,7 +161,7 @@ export default {
     width: 100%;
     max-width: 980px;
     margin-top: 50px;
-    margin-bottom:50px; 
+    margin-bottom:50px;
   }
 
 
@@ -206,7 +194,7 @@ export default {
     font-size: 36px;
     margin: 20px 0;
     font-weight: normal;
- 
+
 }
 
 .commontent p {
@@ -222,7 +210,7 @@ export default {
 .imgcontent img{
     text-align: center;
     max-width: 100%;
-    max-height: 100%; 
+    max-height: 100%;
 }
 
 
@@ -235,6 +223,6 @@ export default {
   flex-direction: column;
   align-items: left;
   justify-content: center;
- 
+
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-    
+
 <div class="box-content clearfix">
        <div class="searchcontainer">
           <el-input v-model="input" placeholder="智能全站资源搜索" v-on:input ="search"></el-input>
@@ -7,19 +7,14 @@
           <img style="height:12px;"src="../public/img/Algolia_logo_bg-white.svg" alt="algolia-logo" class="algolia-search-logo"></a>
        </div>
 
-       <ins class="adsbygoogle"
-          style="display:block"
-          data-ad-client="ca-pub-4924092018203651"
-          data-ad-slot="4765483933"
-          data-ad-format="auto"
-          data-full-width-responsive="true"></ins>
+      <div class="cardcontent"  v-for="(item,index) in dataList" :key="item.Url" v-if="item.sold">
 
-       <el-card class="box-card" v-for="item in dataList" :key="item.Url" v-if="item.sold">
+       <el-card class="box-card">
           <div class="imgfloatcontent">
                <!-- <div class="imgfloatcontent" :style="{ 'background': 'url(' +item.thumbUrl + ') no-repeat center center', 'background-size': '100% 100%'}"> -->
               <div class = "imgcover"></div>
               <img :src="item.thumbUrl"/>
-              <div class = "imgfloatdiv">  
+              <div class = "imgfloatdiv">
                   <p style="text-align: left;" v-if="isShowTag">{{item.tag}}</p>
                   <div style="width:100%;text-align:left;">
                    <a :href="item.byauthorurl" target="_blank" style="margin-left:10px;font-size:10px;" v-if="item.byauthor!=''">By {{item.byauthor}}</a>
@@ -31,12 +26,12 @@
                     <iframe style="margin-left:10px;margin-top:10px;"
                       frameborder="0" scrolling="0"  height="20px"
                       :src="'https://ghbtns.com/github-btn.html?user='+item.gitauthor+'&repo='+item.gitrepo+'&type=star&count=true'" v-if="item.gitauthor!=''&&item.gitrepo!=''">
-                    </iframe>  
+                    </iframe>
                   </div>
                   <p style="text-align: left;">{{item.description}}</p>
               </div>
               <!-- <img :src="item.thumbUrl"/> -->
-              
+
           </div>
 
             <div class="btncontent">
@@ -49,6 +44,10 @@
             </div>
        </el-card>
 
+        <el-card class="box-card" v-if="index==0" style="margin-top:20px;height:340px;">
+            <Adsense></Adsense>
+        </el-card>
+      </div>
 </div>
 
 </template>
@@ -154,7 +153,7 @@
         this.isTool = false
       }
 
-      
+
       if(path.search("game") != -1 )
       {
         this.isGame = true
@@ -171,13 +170,11 @@
       var path = this.$route.path
       if(path == co.PATH_SEARCH)
       {
-        //document.getElementById("searchcontainerid").style.display= "visible"; 
-       
-      }else{
-        //document.getElementById("searchcontainerid").style.display= "none"; 
-      }
+        //document.getElementById("searchcontainerid").style.display= "visible";
 
-      (adsbygoogle = window.adsbygoogle || []).push({});
+      }else{
+        //document.getElementById("searchcontainerid").style.display= "none";
+      }
     },
     methods:
     {
@@ -186,7 +183,7 @@
             //alert(url)
             window.open("https://www.leachchen.com/webopen/open.html?open="+url+"/");
             //window.location.href = url;
-            //window.open(url);        
+            //window.open(url);
         },
         onDownload(url)
         {
@@ -199,7 +196,7 @@
                 window.open("https://www.leachchen.com/webopen/download.html?open="+url);
             }
         },
-    
+
         compare:function(property){
           return function(a,b){
               var value1 = a[property];
@@ -216,11 +213,11 @@
                 return 0
               }
           }
-        }, 
-    
+        },
+
         sortData:function()
         {
-          this.dataList = this.dataList.sort(this.compare('id'));        
+          this.dataList = this.dataList.sort(this.compare('id'));
           this.tmpDataList = this.dataList;
         },
         getData:function(api) {
@@ -235,7 +232,7 @@
           var second = date.getSeconds();
 
           api = api+"?time="+year+month+day+hour+minute
-          
+
           var that = this;
           //this.$http.get(api).then(res=>{
           this.$axioshttp.get(api).then(function (res){
@@ -290,7 +287,7 @@
 
 
 
-              case co.PATH_TOOL_ALL: 
+              case co.PATH_TOOL_ALL:
                that.dataList=res.data.dataToolSynthesize1
                break
               case co.PATH_TOOL_SYNT:
@@ -314,13 +311,13 @@
                 that.dataList=res.data.dataWebsiteCss1
               break
               case co.PATH_H5_JKEYLL:
-                
+
               break
               case co.PATH_H5_HEXO:
-                
+
               break
               case co.PATH_H5_PHP:
-               
+
               break
             }
             that.sortData()
@@ -343,7 +340,7 @@
           }
       }
     }
-   
+
   }
 </script>
 

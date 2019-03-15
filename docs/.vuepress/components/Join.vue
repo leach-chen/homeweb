@@ -35,43 +35,31 @@
 
           <div class="joinpart">
             <div class="joinitem">
-              <p>微信群</p> 
+              <p>微信群</p>
               <img :src="imgurlgroup">
             </div>
 
             <div class="joinitem">
-              <p>公众号</p> 
+              <p>公众号</p>
               <img :src="imgurlgongzhong">
             </div>
           </div>
-          
-          <ins class="adsbygoogle"
-            style="display:block"
-            data-ad-client="ca-pub-4924092018203651"
-            data-ad-slot="4765483933"
-            data-ad-format="auto"
-            data-full-width-responsive="true"></ins>
+
+          <Adsense></Adsense>
 
           <h2>捐助</h2>
 
           <div class="joinpart">
             <div class="joinitem">
-              <p>微信</p> 
+              <p>微信</p>
               <img src="../public/img/wechatimg.jpg">
             </div>
 
             <div class="joinitem">
-              <p>支付宝</p> 
+              <p>支付宝</p>
               <img src="../public/img/alipayimg.jpg">
             </div>
           </div>
-
-          <ins class="adsbygoogle"
-            style="display:block"
-            data-ad-client="ca-pub-4924092018203651"
-            data-ad-slot="4765483933"
-            data-ad-format="auto"
-            data-full-width-responsive="true"></ins>
         </el-card>
     </div>
   </div>
@@ -89,11 +77,10 @@
       }
     },
     mounted () {
-      //goRun()
-      (adsbygoogle = window.adsbygoogle || []).push({});
+
     },
     created: function() {
-    
+
          var timestamp = (new Date()).getTime();
           var date = new Date();
           var year = date.getFullYear();
@@ -129,7 +116,7 @@
     min-height: 800px;
     flex-wrap: wrap;
     margin-top: 50px;
-  
+
 }
 
 
@@ -160,6 +147,6 @@
   justify-content: center;
   padding-left: 50px;
   padding-right: 50px;
-  
+
 } */
 </style>
