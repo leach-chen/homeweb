@@ -9,12 +9,12 @@
             data-full-width-responsive="true"></ins>
        </div>
        <div id="phoneuse" align="center">
-            <ins class="adsbygoogle"
-                style="display:block; text-align:center;"
-                data-ad-layout="in-article"
-                data-ad-format="fluid"
-                data-ad-client="ca-pub-4924092018203651"
-                data-ad-slot="5632623295"></ins>
+            	<ins class="adsbygoogle"
+		 style="display:block"
+		 data-ad-format="fluid"
+		 data-ad-layout-key="-fb+5w+4e-db+86"
+		 data-ad-client="ca-pub-4924092018203651"
+		 data-ad-slot="6057013753"></ins>
        </div>
     </div>
 </template>
