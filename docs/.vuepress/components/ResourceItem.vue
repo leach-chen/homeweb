@@ -235,7 +235,7 @@
 
           var that = this;
           //this.$http.get(api).then(res=>{
-          this.$axioshttp.get(api).then(function (res){
+          this.$http.get(api).then(function (res){
           var path = that.$route.path
 
             switch(path)
