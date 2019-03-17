@@ -41,3 +41,11 @@ export default {
  }
 }
 </script>
+
+<style>
+ins {
+    min-width: 200px;
+    min-height: 50px;
+    max-height: 360px;
+}
+</style>
