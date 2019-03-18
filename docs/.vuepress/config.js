@@ -136,6 +136,10 @@ module.exports = {
                     collapsable: false,
                     children: [
                         'all/',
+                        'smart/',
+                        'chesscard/',
+                        'shoot/',
+                        'risk/',
                         'synthesize/',
                     ]
                 },

@@ -130,6 +130,10 @@
 
 
         case co.PATH_GAME_ALL:
+        case co.PATH_GAME_SMART:
+        case co.PATH_GAME_CHESSCARD:
+        case co.PATH_GAME_RISK:
+        case co.PATH_GAME_SHOOT:
         case co.PATH_GAME_SYNT:
           this.getData(this.apigame)
         break
@@ -306,7 +310,22 @@
 
 
               case co.PATH_GAME_ALL:
-                that.dataList=res.data.dataGameSynthesize1
+                that.dataList=res.data.dataGameSmart1.concat(res.data.dataGameSynthesize1)
+                .concat(res.data.dataGameChesscard1).concat(res.data.dataGamerisk1)
+                .concat(res.data.dataGameshoot1)
+              break
+              case co.PATH_GAME_SMART:
+                that.dataList=res.data.dataGameSmart1
+              break
+              case co.PATH_GAME_CHESSCARD:
+                that.dataList=res.data.dataGameChesscard1
+              break
+              
+              case co.PATH_GAME_RISK:
+                that.dataList=res.data.dataGamerisk1
+              break
+              case co.PATH_GAME_SHOOT:
+                that.dataList=res.data.dataGameshoot1
               break
               case co.PATH_GAME_SYNT:
                 that.dataList=res.data.dataGameSynthesize1
