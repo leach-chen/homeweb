@@ -95,6 +95,7 @@
         case co.PATH_ANDROID_ANIMATION:
         case co.PATH_ANDROID_VIEW:
         case co.PATH_ANDROID_SYNT:
+        case co.PATH_ANDROID_COMPONENT:
         case co.PATH_ANDROID_ARCH:
           this.getData(this.apiandroid)
         break
@@ -243,7 +244,7 @@
               case co.PATH_ANDROID_ALL:
                 that.dataList=res.data.dataAndroidFull1.concat(res.data.dataAndroidAnimation1)
                 .concat(res.data.dataAndroidView1).concat(res.data.dataAndroidSynthesize1)
-                .concat(res.data.dataAndroidArchitecture1)
+                .concat(res.data.dataAndroidArchitecture1).concat(res.data.dataAndroidComponent1)
                break;
               case co.PATH_ANDROID_FULL:
                 that.dataList=res.data.dataAndroidFull1
@@ -257,9 +258,13 @@
                case co.PATH_ANDROID_SYNT:
                that.dataList=res.data.dataAndroidSynthesize1
                break
+              case co.PATH_ANDROID_COMPONENT:
+                that.dataList=res.data.dataAndroidComponent1
+               break;
               case co.PATH_ANDROID_ARCH:
                that.dataList=res.data.dataAndroidArchitecture1
                break
+              
 
               case co.PATH_IOS_ALL:
                 that.dataList=res.data.dataIosFull1

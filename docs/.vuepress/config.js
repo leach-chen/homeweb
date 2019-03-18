@@ -80,6 +80,7 @@ module.exports = {
                         'animation/',
                         'view/',
                         'synthesize/',
+                        'component/',
                         'architecture/',
                     ]
                 },
