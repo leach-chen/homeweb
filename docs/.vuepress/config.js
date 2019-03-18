@@ -156,7 +156,12 @@ module.exports = {
 
 
 
-
+/*
+1.config.js里面添加分类
+2.Constant.js里面添加分类
+3.ResouleItem.vue里面 created: f，getData:里面添加分类
+4.storedata1里面添加分类
+*/
 
 
 
