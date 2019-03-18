@@ -310,9 +310,10 @@
 
 
               case co.PATH_GAME_ALL:
-                that.dataList=res.data.dataGameSmart1.concat(res.data.dataGameSynthesize1)
-                .concat(res.data.dataGameChesscard1).concat(res.data.dataGamerisk1)
-                .concat(res.data.dataGameshoot1)
+                console.log("aaaaaaa")
+                that.dataList=res.data.dataGameSynthesize1.concat(res.data.dataGameSmart1)
+                .concat(res.data.dataGameChesscard1).concat(res.data.dataGameRisk1)
+                .concat(res.data.dataGameShoot1)
               break
               case co.PATH_GAME_SMART:
                 that.dataList=res.data.dataGameSmart1
@@ -320,7 +321,6 @@
               case co.PATH_GAME_CHESSCARD:
                 that.dataList=res.data.dataGameChesscard1
               break
-              
               case co.PATH_GAME_RISK:
                 that.dataList=res.data.dataGamerisk1
               break
