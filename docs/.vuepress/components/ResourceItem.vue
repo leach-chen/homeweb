@@ -103,6 +103,7 @@
 
         case co.PATH_IOS_ALL:
         case co.PATH_IOS_FULL:
+        case co.PATH_IOS_SYNT:
           this.getData(this.apiios)
         break
 
@@ -267,9 +268,13 @@
               
 
               case co.PATH_IOS_ALL:
-                that.dataList=res.data.dataIosFull1
+                that.dataList=res.data.dataIosFull1.concat(res.data.dataIosSynthesize1)
+                break
               case co.PATH_IOS_FULL:
                 that.dataList=res.data.dataIosFull1
+              break
+              case co.PATH_IOS_SYNT:
+              that.dataList=res.data.dataIosSynthesize1
               break
 
 
