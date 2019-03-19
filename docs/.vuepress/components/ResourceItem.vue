@@ -310,7 +310,6 @@
 
 
               case co.PATH_GAME_ALL:
-                console.log("aaaaaaa")
                 that.dataList=res.data.dataGameSynthesize1.concat(res.data.dataGameSmart1)
                 .concat(res.data.dataGameChesscard1).concat(res.data.dataGameRisk1)
                 .concat(res.data.dataGameShoot1)
