@@ -16,7 +16,7 @@
             <br>
             <div class="imgcontent">
                 <!-- <img :src="imgurlbk1"> -->
-                <div class="spanshow" style="position:absolute;margin:10px;text-align:left;">
+                <div class="spanshow" style="position:absolute;margin:10px;text-align:left;z-index:2;">
                    <span id="nameshow1">leachchen@ubuntu:~$&nbsp;</span><span id="cmdshow1"></span><span id="cmdshow1place" style="display:none">ls /</span><br>
                    <span id="resultshow1" style="display:none;">资源库</span><br>
                    <span id="nameshow2" style="display:none;">leachchen@ubuntu:~$&nbsp;</span><span id="cmdshow2" style="display:none;"></span><span id="cmdshow2place" style="display:none">cd 资源库</span><br>
