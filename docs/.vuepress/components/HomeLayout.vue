@@ -6,7 +6,9 @@
               data-ad-client="ca-pub-4924092018203651">
     </amp-auto-ads> -->
 
-    <div class="commontent contentpart1">
+   
+    <div class="commontent contentpart1" style="z-index:2;">
+        <!-- <canvas id="canvas" style="width:100%;height:100%px;background-color:#000;position:absolute;z-index:1;"><span class="STYLE1">Open IE effect more perfect </span></canvas>      -->
         <el-card class="box-card">
             <h1>资源小仓库</h1>
             <p>这是一个资源收集网站，收集一些精选资源</p>
@@ -31,7 +33,7 @@
             <h1>Github 资源站</h1>
             <p>在这里收集了Android，IOS，Flutter，Vue，H5完整项目，实用性高的组件。项目均包含源码及部分可直接预览效果，节省你的资源寻找及编译时间</p>
             <div class="imgcontent">
-                <img src="https://cdn.jsdelivr.net/gh/flutterchina/website@1.0/images/intellij/hot-reload.gif">
+                <!-- <img src="https://cdn.jsdelivr.net/gh/flutterchina/website@1.0/images/intellij/hot-reload.gif"> -->
             </div>
             <el-row>
                   <el-button type="primary" @click="goContribute">贡献资源</el-button>
@@ -68,6 +70,7 @@
 <script>
 // import {diyfun} from '../public/js/aa.js' //注意路径
 // import '../public/js/busuanzi.pure.mini.js' //注意路径
+import  {init,loop} from '../public/js/yanhua.js' //注意路径
 export default {
  data () {
   return {
@@ -76,7 +79,8 @@ export default {
   }
  },
  mounted () {
-
+  init()
+  loop()
  },
   created: function() {
 
