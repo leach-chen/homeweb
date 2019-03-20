@@ -8,20 +8,25 @@
 
    
     <div class="commontent contentpart1" style="z-index:2;">
-        <!-- <canvas id="canvas" style="width:100%;height:100%px;background-color:#000;position:absolute;z-index:1;"><span class="STYLE1">Open IE effect more perfect </span></canvas>      -->
+        
         <el-card class="box-card">
             <h1>资源小仓库</h1>
-            <p>这是一个资源收集网站，收集一些精选资源</p>
-            <p>1:收集了Github上开源项目资源(Android,IOS,Flutter,Vue,H5)，可在线预览项目效果及包含源码地址</p>
-            <p>2:收集了游戏，你可以在线玩一玩也可下载源码</p>
-            <p>3:收集了实用工具</p>
+            <p>你想找的,或许这里就有。点击屏幕,让烟花尽情绽放吧~</p>
+            <!-- 也欢迎大家一起贡献资源，让小仓库丰富起来，也让你的资源让更多人知道，资源上会展示你的昵称及你的网站链接。资源若有侵犯原作者权益，请联系我进行下架。 -->
             <br>
-            也欢迎大家一起贡献资源，让小仓库丰富起来，也让你的资源让更多人知道，资源上会展示你的昵称及你的网站链接。资源若有侵犯原作者权益，请联系我进行下架。
-            <br>  <br>
-            <strong>注:因网站经常会新增资源分类等内容，若右下角出现refresh，请点击，这样网站会将新内容刷新出来</strong>
             <div class="imgcontent">
-                <img :src="imgurlbk1">
+                <!-- <img :src="imgurlbk1"> -->
+                <div class="spanshow" style="position:absolute;margin:10px;text-align:left;">
+                   <span id="nameshow1">leachchen@ubuntu:~$&nbsp;</span><span id="cmdshow1"></span><span id="cmdshow1place" style="display:none">ls /</span><br>
+                   <span id="resultshow1" style="display:none;">资源库</span><br>
+                   <span id="nameshow2" style="display:none;">leachchen@ubuntu:~$&nbsp;</span><span id="cmdshow2" style="display:none;"></span><span id="cmdshow2place" style="display:none">cd 资源库</span><br>
+                   <span id="nameshow3" style="display:none;">leachchen@ubuntu:~$&nbsp;</span><span id="cmdshow3" style="display:none;"></span><span id="cmdshow3place" style="display:none">ls /</span><br>
+                   <span id="resultshow3" style="display:none;"><a v-on:click="goAndroid">Android</a> &nbsp;&nbsp;&nbsp; <a v-on:click="goIos">IOS</a> &nbsp;&nbsp;&nbsp; <a v-on:click="goFlutter">Flutter</a> &nbsp;&nbsp;&nbsp; <a v-on:click="goVue">Vue</a> &nbsp;&nbsp;&nbsp;<a v-on:click="goH5">H5</a> &nbsp;&nbsp;&nbsp; <a v-on:click="goGame">游戏</a> &nbsp;&nbsp;&nbsp; <a v-on:click="goTool">工具</a> </span><br>
+                </div>
+                <img src="../public/img/yanhua.jpg" style="position:absolute;height:50px;bottom:-50px;"></img>
+                <canvas id="canvas" style="height:100%px;background-color:#310924;"><span class="STYLE1">Open IE effect more perfect </span></canvas>
             </div>
+            <strong>注:因网站经常会新增资源分类等内容，若右下角出现refresh，请点击，这样网站会将新内容刷新出来</strong>
             <el-row>
                 <el-button type="primary" @click="goGithub">探索资源</el-button>
             </el-row>
@@ -33,6 +38,7 @@
             <h1>Github 资源站</h1>
             <p>在这里收集了Android，IOS，Flutter，Vue，H5完整项目，实用性高的组件。项目均包含源码及部分可直接预览效果，节省你的资源寻找及编译时间</p>
             <div class="imgcontent">
+                <img :src="imgurlbk1">
                 <!-- <img src="https://cdn.jsdelivr.net/gh/flutterchina/website@1.0/images/intellij/hot-reload.gif"> -->
             </div>
             <el-row>
@@ -75,12 +81,37 @@ export default {
  data () {
   return {
    testvalue: '',
-   imgurlbk1: ''
+   imgurlbk1: '',
+   index:0,
+   run1:0,
+   run2:0,
+   run3:0
   }
  },
  mounted () {
   init()
   loop()
+
+  this.run1 = setInterval(this.showcmd1, 100);
+  setTimeout(() => {
+    
+     document.getElementById("resultshow1").style.display= "";
+     document.getElementById("nameshow2").style.display= "";
+     document.getElementById("cmdshow2").style.display= "";
+     
+      this.run2 = setInterval(this.showcmd2, 200);
+      setTimeout(() => {
+         document.getElementById("nameshow3").style.display= "";
+         document.getElementById("cmdshow3").style.display= "";
+
+         this.run3 = setInterval(this.showcmd3, 200);
+         setTimeout(() => {
+            document.getElementById("resultshow3").style.display= "";
+         }, 1200);
+      }, 1200);
+     
+  }, 1000);
+
  },
   created: function() {
 
@@ -96,11 +127,20 @@ export default {
         this.imgurlbk1 = "https://www.leachchen.com/storeother/img/bk1.jpg"+"?time="+year+month+day
   },
  methods:{
-   goGithub(){
+   goAndroid(){
      this.$router.push("/github/android/all/");
    },
-   goBlog(){
-     this.$router.push("https://www.leachchen.com/blog");
+   goIos(){
+     this.$router.push("/github/ios/all/");
+   },
+   goFlutter(){
+     this.$router.push("/github/flutter/all/");
+   },
+   goVue(){
+     this.$router.push("/github/vue/all/");
+   },
+   goH5(){
+     this.$router.push("/github/h5/all/");
    },
    goGame(){
      this.$router.push("/game/all/");
@@ -108,15 +148,56 @@ export default {
    goTool(){
      this.$router.push("/tool/all/");
    },
-   goTool(){
-     this.$router.push("/message/");
+   goContribute()
+   {
+      this.$router.push("/join/");
    },
-   goContribute(){
-     this.$router.push("/join/");
+   goGithub()
+   {
+      this.$router.push("/github/android/all/");
    },
-   goAbout(){
-     this.$router.push("/join/");
+   goBlog(){
+     this.$router.push("https://www.leachchen.com/blog");
    },
+   showcmd1(){
+   
+      if(document.getElementById("cmdshow1place") != null)
+      {
+        var word=document.getElementById("cmdshow1place").innerHTML;
+        document.getElementById("cmdshow1").innerText = word.substring(0,this.index++);
+        if(this.index > word.length)
+        {
+          clearInterval(this.run1)
+          this.index = 0;
+        }
+      }
+  },
+   showcmd2(){
+      if(document.getElementById("cmdshow2place") != null)
+      {
+        var word=document.getElementById("cmdshow2place").innerHTML;
+        document.getElementById("cmdshow2").innerText = word.substring(0,this.index++);
+        if(this.index > word.length)
+        {
+          clearInterval(this.run2)
+          this.index = 0;
+        }
+      }
+  },
+   showcmd3(){
+      if(document.getElementById("cmdshow3place") != null)
+      {
+        var word=document.getElementById("cmdshow3place").innerHTML;
+        document.getElementById("cmdshow3").innerText = word.substring(0,this.index++);
+        if(this.index > word.length)
+        {
+        
+          clearInterval(this.run3)
+          this.index = 0;
+        }
+      }
+  }
+ 
  }
 }
 </script>
@@ -211,13 +292,21 @@ export default {
     text-align: center;
 }
 
-.imgcontent img{
+.c img{
     text-align: center;
     max-width: 100%;
     max-height: 100%;
 }
 
+.imgcontent span{
+  color:#fff;
+  font-size:14px;
+}
 
+.spanshow a{
+  text-decoration: underline;
+  cursor:pointer;
+}
 
 </style>
 
