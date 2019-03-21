@@ -24,7 +24,7 @@
                    <span id="resultshow3" style="display:none;"><a v-on:click="goAndroid">Android</a> &nbsp;&nbsp;&nbsp; <a v-on:click="goIos">IOS</a> &nbsp;&nbsp;&nbsp; <a v-on:click="goFlutter">Flutter</a> &nbsp;&nbsp;&nbsp; <a v-on:click="goVue">Vue</a> &nbsp;&nbsp;&nbsp;<a v-on:click="goH5">H5</a> &nbsp;&nbsp;&nbsp; <a v-on:click="goGame">游戏</a> &nbsp;&nbsp;&nbsp; <a v-on:click="goTool">工具</a> </span><br>
                 </div>
                 <img src="../public/img/yanhua.jpg" style="position:absolute;height:50px;bottom:-50px;"></img>
-                <canvas id="canvas" style="height:100%px;background-color:#310924;"><span class="STYLE1">Open IE effect more perfect </span></canvas>
+                <canvas id="canvas" style="height:100%;background-color:#310924;"><span class="STYLE1">Open IE effect more perfect </span></canvas>
             </div>
             <strong>注:因网站经常会新增资源分类等内容，若右下角出现refresh，请点击，这样网站会将新内容刷新出来</strong>
             <el-row>
