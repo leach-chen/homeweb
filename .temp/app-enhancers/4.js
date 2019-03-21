@@ -1,0 +1,1 @@
+export { default } from "D:\\Android\\Github\\storemanager\\homeweb\\node_modules\\@vuepress\\plugin-pwa\\lib\\inject.js"

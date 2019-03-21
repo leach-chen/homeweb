@@ -308,6 +308,10 @@ export default {
   cursor:pointer;
 }
 
+canvas {
+	cursor: crosshair;
+}
+
 </style>
 
 <style>
