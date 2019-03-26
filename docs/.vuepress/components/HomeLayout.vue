@@ -292,7 +292,7 @@ export default {
     text-align: center;
 }
 
-.c img{
+.imgcontent img{
     text-align: center;
     max-width: 100%;
     max-height: 100%;
