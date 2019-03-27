@@ -17,10 +17,12 @@
             <div class="imgcontent">
                 <!-- <img :src="imgurlbk1"> -->
                 <div class="spanshow" style="position:absolute;margin:10px;text-align:left;z-index:2;">
-                   <span id="nameshow1">leachchen@ubuntu:~$&nbsp;</span><span id="cmdshow1"></span><span id="cmdshow1place" style="display:none">ls /</span><br>
-                   <span id="resultshow1" style="display:none;">资源库</span><br>
-                   <span id="nameshow2" style="display:none;">leachchen@ubuntu:~$&nbsp;</span><span id="cmdshow2" style="display:none;"></span><span id="cmdshow2place" style="display:none">cd 资源库</span><br>
-                   <span id="nameshow3" style="display:none;">leachchen@ubuntu:~$&nbsp;</span><span id="cmdshow3" style="display:none;"></span><span id="cmdshow3place" style="display:none">ls /</span><br>
+					<span id="nameshow1" class="color_7ABA30">leachchen@ubuntu<span class="color_FFFFFF">:</span><span class="color_6487AD">~</span><span class="color_FFFFFF">$&nbsp;</span></span><span id="cmdshow1" class="color_FFFFFF"></span><span id="cmdshow1place" style="display:none">ls /</span><br>
+                   <span id="resultshow1" class="color_6487AD" style="display:none">资源库</span><br>
+                   
+				   <span id="nameshow2"  class="color_7ABA30" style="display:none;">leachchen@ubuntu<span class="color_FFFFFF">:</span><span class="color_6487AD">~</span><span class="color_FFFFFF">$&nbsp;&nbsp;</span></span><span id="cmdshow2" class="color_FFFFFF" style="display:none;"></span><span id="cmdshow2place" style="display:none">cd 资源库/</span><br>
+                   
+				   <span id="nameshow3" class="color_7ABA30" style="display:none;">leachchen@ubuntu<span class="color_FFFFFF">:</span><span class="color_6487AD">~/资源库</span><span class="color_FFFFFF">$&nbsp;</span></span><span id="cmdshow3" class="color_FFFFFF" style="display:none;"></span><span id="cmdshow3place" style="display:none">ls /</span><br>
                    <span id="resultshow3" style="display:none;"><a v-on:click="goAndroid">Android</a> &nbsp;&nbsp;&nbsp; <a v-on:click="goIos">IOS</a> &nbsp;&nbsp;&nbsp; <a v-on:click="goFlutter">Flutter</a> &nbsp;&nbsp;&nbsp; <a v-on:click="goVue">Vue</a> &nbsp;&nbsp;&nbsp;<a v-on:click="goH5">H5</a> &nbsp;&nbsp;&nbsp; <a v-on:click="goGame">游戏</a> &nbsp;&nbsp;&nbsp; <a v-on:click="goTool">工具</a> </span><br>
                 </div>
                 <img src="../public/img/yanhua.jpg" style="position:absolute;height:50px;bottom:-50px;"></img>
@@ -299,7 +301,6 @@ export default {
 }
 
 .imgcontent span{
-  color:#fff;
   font-size:14px;
 }
 
@@ -310,6 +311,21 @@ export default {
 
 canvas {
 	cursor: crosshair;
+}
+
+.color_7ABA30
+{
+	color:#7ABA30
+}
+
+.color_FFFFFF
+{
+	color:#FFFFFF
+}
+
+.color_6487AD
+{
+	color:#6487AD
 }
 
 </style>
