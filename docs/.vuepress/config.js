@@ -7,7 +7,7 @@ module.exports = {
         //for auto start
         //  ['script', { async:"async",src:"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"}],
         //  ['script', {},"(adsbygoogle = window.adsbygoogle || []).push({google_ad_client: \"ca-pub-4924092018203651\",enable_page_level_ads: true});"],
-         
+
         //  ['script', { async:"async","custom-element":"amp-auto-ads",src:"https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"}],
         //for auto end
 
@@ -17,9 +17,9 @@ module.exports = {
 
 
          ['script', { async:"async",src:"//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"}],
-         ['script', {},"var _hmt = _hmt || [];(function() {var hm = document.createElement(\"script\");hm.src = \"https://hm.baidu.com/hm.js?0447a7b7b5fc544c1a27e5675a8e5a6c\";var s = document.getElementsByTagName(\"script\")[0]; s.parentNode.insertBefore(hm, s);})();"],         
-        
-        
+         ['script', {},"var _hmt = _hmt || [];(function() {var hm = document.createElement(\"script\");hm.src = \"https://hm.baidu.com/hm.js?0447a7b7b5fc544c1a27e5675a8e5a6c\";var s = document.getElementsByTagName(\"script\")[0]; s.parentNode.insertBefore(hm, s);})();"],
+
+
          ['script', {src:"https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"}],
 
          //['script', {src:"https://www.leachchen.com/storedata1/other/js/vconsole.min.js"}],
@@ -50,6 +50,7 @@ module.exports = {
                     { text: 'Android', link: '/github/android/all/' },
                     { text: 'IOS', link: '/github/ios/all/' },
                     { text: 'Flutter', link: '/github/flutter/all/'},
+                    { text: 'ReactNative', link: '/github/reactnative/all/'},
                     { text: 'Vue', link: '/github/vue/all/'},
                     { text: 'H5', link: '/github/h5/all/' },
                 ]
@@ -103,6 +104,17 @@ module.exports = {
                     children: [
                         'all/',
                         'project/',
+                    ]
+                },
+            ],
+            '/github/reactnative/': [
+                {
+                    title: 'ReactNative Github',
+                    collapsable: false,
+                    children: [
+                        'all/',
+                        'project/',
+                        'synthesize/',
                     ]
                 },
             ],

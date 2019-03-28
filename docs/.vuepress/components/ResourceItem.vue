@@ -75,6 +75,7 @@
           apiandroid:"https://www.leachchen.com/storedata1/android/android.js",
           apiios:"https://www.leachchen.com/storedata1/ios/ios.js",
           apiflutter:"https://www.leachchen.com/storedata1/flutter/flutter.js",
+          apireactnative:"https://www.leachchen.com/storedata1/reactnative/reactnative.js",
           apivue:"https://www.leachchen.com/storedata1/vue/vue.js",
           apigame:"https://www.leachchen.com/storedata1/game/game.js",
           apitool:"https://www.leachchen.com/storedata1/tool/tool.js",
@@ -114,6 +115,11 @@
            this.getData(this.apiflutter)
         break
 
+        case co.PATH_REACTNATIVE_ALL:
+        case co.PATH_REACTNATIVE_FULL:
+        case co.PATH_REACTNATIVE_SYNT:
+           this.getData(this.apireactnative)
+        break
 
 
         case co.PATH_VUE_ALL:
@@ -269,7 +275,7 @@
               case co.PATH_ANDROID_ARCH:
                that.dataList=res.data.dataAndroidArchitecture1
                break
-              
+
 
               case co.PATH_IOS_ALL:
                 that.dataList=res.data.dataIosFull1.concat(res.data.dataIosSynthesize1)
@@ -288,6 +294,17 @@
               break
               case co.PATH_FLUTTER_FULL:
                 that.dataList=res.data.dataFlutterFull1
+              break
+
+
+              case co.PATH_REACTNATIVE_ALL:
+               that.dataList=res.data.dataReactnativeFull1.concat(res.data.dataReactnativeSynthesize1)
+              break
+              case co.PATH_REACTNATIVE_FULL:
+                that.dataList=res.data.dataReactnativeFull1
+              break
+              case co.PATH_REACTNATIVE_SYNT:
+                that.dataList=res.data.dataReactnativeSynthesize1
               break
 
 
