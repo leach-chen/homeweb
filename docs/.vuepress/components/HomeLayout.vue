@@ -6,9 +6,9 @@
               data-ad-client="ca-pub-4924092018203651">
     </amp-auto-ads> -->
 
-   
+
     <div class="commontent contentpart1" style="z-index:2;">
-        
+
         <el-card class="box-card">
             <h1>资源小仓库</h1>
             <p>你想找的,或许这里就有。点击屏幕,让烟花尽情绽放吧~</p>
@@ -19,16 +19,16 @@
                 <div class="spanshow" style="position:absolute;margin:10px;text-align:left;z-index:2;">
 					<span id="nameshow1" class="color_7ABA30">leachchen@ubuntu<span class="color_FFFFFF">:</span><span class="color_6487AD">~</span><span class="color_FFFFFF">$&nbsp;</span></span><span id="cmdshow1" class="color_FFFFFF"></span><span id="cmdshow1place" style="display:none">ls /</span><br>
                    <span id="resultshow1" class="color_6487AD" style="display:none">资源库</span><br>
-                   
+
 				   <span id="nameshow2"  class="color_7ABA30" style="display:none;">leachchen@ubuntu<span class="color_FFFFFF">:</span><span class="color_6487AD">~</span><span class="color_FFFFFF">$&nbsp;&nbsp;</span></span><span id="cmdshow2" class="color_FFFFFF" style="display:none;"></span><span id="cmdshow2place" style="display:none">cd 资源库/</span><br>
-                   
+
 				   <span id="nameshow3" class="color_7ABA30" style="display:none;">leachchen@ubuntu<span class="color_FFFFFF">:</span><span class="color_6487AD">~/资源库</span><span class="color_FFFFFF">$&nbsp;</span></span><span id="cmdshow3" class="color_FFFFFF" style="display:none;"></span><span id="cmdshow3place" style="display:none">ls /</span><br>
                    <span id="resultshow3" style="display:none;"><a v-on:click="goAndroid">Android</a> &nbsp;&nbsp;&nbsp; <a v-on:click="goIos">IOS</a> &nbsp;&nbsp;&nbsp; <a v-on:click="goFlutter">Flutter</a> &nbsp;&nbsp;&nbsp; <a v-on:click="goVue">Vue</a> &nbsp;&nbsp;&nbsp;<a v-on:click="goH5">H5</a> &nbsp;&nbsp;&nbsp; <a v-on:click="goGame">游戏</a> &nbsp;&nbsp;&nbsp; <a v-on:click="goTool">工具</a> </span><br>
                 </div>
                 <img src="../public/img/yanhua.jpg" style="position:absolute;height:50px;bottom:-50px;"></img>
                 <canvas id="canvas" style="height:100%;background-color:#310924;"><span class="STYLE1">Open IE effect more perfect </span></canvas>
             </div>
-            <strong>注:因网站经常会新增资源分类等内容，若右下角出现refresh，请点击，这样网站会将新内容刷新出来</strong>
+            <!-- <strong>注:因网站经常会新增资源分类等内容，若右下角出现refresh，请点击，这样网站会将新内容刷新出来</strong> -->
             <el-row>
                 <el-button type="primary" @click="goGithub">探索资源</el-button>
             </el-row>
@@ -96,11 +96,11 @@ export default {
 
   this.run1 = setInterval(this.showcmd1, 100);
   setTimeout(() => {
-    
+
      document.getElementById("resultshow1").style.display= "";
      document.getElementById("nameshow2").style.display= "";
      document.getElementById("cmdshow2").style.display= "";
-     
+
       this.run2 = setInterval(this.showcmd2, 200);
       setTimeout(() => {
          document.getElementById("nameshow3").style.display= "";
@@ -111,7 +111,7 @@ export default {
             document.getElementById("resultshow3").style.display= "";
          }, 1200);
       }, 1200);
-     
+
   }, 1000);
 
  },
@@ -162,7 +162,7 @@ export default {
      this.$router.push("https://www.leachchen.com/blog");
    },
    showcmd1(){
-   
+
       if(document.getElementById("cmdshow1place") != null)
       {
         var word=document.getElementById("cmdshow1place").innerHTML;
@@ -193,13 +193,13 @@ export default {
         document.getElementById("cmdshow3").innerText = word.substring(0,this.index++);
         if(this.index > word.length)
         {
-        
+
           clearInterval(this.run3)
           this.index = 0;
         }
       }
   }
- 
+
  }
 }
 </script>
