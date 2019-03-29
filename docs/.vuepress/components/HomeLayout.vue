@@ -29,9 +29,10 @@
                 <canvas id="canvas" style="height:100%;background-color:#310924;"><span class="STYLE1">Open IE effect more perfect </span></canvas>
             </div>
             <!-- <strong>注:因网站经常会新增资源分类等内容，若右下角出现refresh，请点击，这样网站会将新内容刷新出来</strong> -->
-            <el-row>
+            <el-row style="margin-bottom:10px;">
                 <el-button type="primary" @click="goGithub">探索资源</el-button>
             </el-row>
+              <Adsense></Adsense>
         </el-card>
     </div>
 
@@ -43,7 +44,7 @@
                 <img :src="imgurlbk1">
                 <!-- <img src="https://cdn.jsdelivr.net/gh/flutterchina/website@1.0/images/intellij/hot-reload.gif"> -->
             </div>
-            <el-row>
+            <el-row  style="margin-bottom:10px;">
                   <el-button type="primary" @click="goContribute">贡献资源</el-button>
             </el-row>
 
@@ -59,9 +60,10 @@
             <div class="imgcontent">
                  <img src="../public/img/gameshow.jpg">
             </div>
-            <el-row>
+            <el-row  style="margin-bottom:10px;">
                 <el-button type="primary" @click="goGame">立刻前往</el-button>
             </el-row>
+           <Adsense></Adsense>
         </el-card>
     </div>
 

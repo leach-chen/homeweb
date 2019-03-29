@@ -57,6 +57,7 @@ module.exports = {
             },
             { text: '游戏', link: '/game/all/' },
             { text: '工具', link: '/tool/all/' },
+            { text: '逆向', link: '/nixiang/article/' },
             { text: '留言', link: '/message/' },
             { text: 'Gitter聊天', link: 'https://gitter.im/leachchen/fullstack?utm_source=share-link&utm_medium=link&utm_campaign=share-link' },
             { text: '博客', link: 'https://www.leachchen.com/blog' },
@@ -142,6 +143,17 @@ module.exports = {
                 },
             ],
 
+            '/nixiang/': [
+                {
+                    title: '逆向',
+                    collapsable: false,
+                    children: [
+                        'article/',
+                        'tool/',
+                    ]
+                },
+            ],
+
             '/game/': [
                 {
                     title: 'Games',
@@ -164,6 +176,7 @@ module.exports = {
                     children: [
                         'all/',
                         'synthesize/',
+                        'imgoperate/',
                     ]
                 },
             ],

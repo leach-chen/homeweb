@@ -131,6 +131,7 @@
 
         case co.PATH_TOOL_ALL:
         case co.PATH_TOOL_SYNT:
+        case co.PATH_TOOL_IMG:
           this.getData(this.apitool)
         break
 
@@ -319,11 +320,14 @@
 
 
               case co.PATH_TOOL_ALL:
-               that.dataList=res.data.dataToolSynthesize1
+               that.dataList=res.data.dataToolSynthesize1.concat(res.data.dataToolImgoperate1)
                break
               case co.PATH_TOOL_SYNT:
                 that.dataList=res.data.dataToolSynthesize1
               break
+              case co.PATH_TOOL_IMG:
+                that.dataList=res.data.dataToolImgoperate1
+              break;
 
 
               case co.PATH_GAME_ALL:
