@@ -124,6 +124,7 @@
 
         case co.PATH_VUE_ALL:
         case co.PATH_VUE_FULL:
+        case co.PATH_VUE_SYNT:
           this.getData(this.apivue)
         break
 
@@ -311,10 +312,13 @@
 
 
               case co.PATH_VUE_ALL:
-                that.dataList=res.data.dataVueFull1
+                that.dataList=res.data.dataVueFull1.concat(res.data.dataVueSynthesize1)
               break
               case co.PATH_VUE_FULL:
                 that.dataList=res.data.dataVueFull1
+              break
+              case co.PATH_VUE_SYNT:
+                that.dataList=res.data.dataVueSynthesize1
               break
 
 

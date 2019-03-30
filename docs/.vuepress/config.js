@@ -126,6 +126,7 @@ module.exports = {
                     children: [
                         'all/',
                         'project/',
+                        'synthesize/',
                     ]
                 },
             ],
