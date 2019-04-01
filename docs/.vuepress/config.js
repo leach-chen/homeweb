@@ -74,7 +74,7 @@ module.exports = {
             // ],
             '/github/android/': [
                 {
-                    title: 'Android Github',
+                    title: 'Android',
                     collapsable: false,
                     children: [
                         'all/',
@@ -89,7 +89,7 @@ module.exports = {
             ],
             '/github/ios/': [
                 {
-                    title: 'IOS Github',
+                    title: 'IOS',
                     collapsable: false,
                     children: [
                         'all/',
@@ -100,7 +100,7 @@ module.exports = {
             ],
             '/github/flutter/': [
                 {
-                    title: 'Flutter Github',
+                    title: 'Flutter',
                     collapsable: false,
                     children: [
                         'all/',
@@ -110,7 +110,7 @@ module.exports = {
             ],
             '/github/reactnative/': [
                 {
-                    title: 'ReactNative Github',
+                    title: 'ReactNative',
                     collapsable: false,
                     children: [
                         'all/',
@@ -121,7 +121,7 @@ module.exports = {
             ],
             '/github/vue/': [
                 {
-                    title: 'Vue Github',
+                    title: 'Vue',
                     collapsable: false,
                     children: [
                         'all/',
@@ -132,11 +132,12 @@ module.exports = {
             ],
             '/github/h5/': [
                 {
-                    title: 'H5 Github',
+                    title: 'H5',
                     collapsable: false,
                     children: [
                         'all/',
                         'h5/',
+                        'coolh5/',
                         'hexo/',
                         'jekyll/',
                         'php/',
