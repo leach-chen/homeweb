@@ -232,7 +232,7 @@
 
         sortData:function()
         {
-          this.dataList = this.dataList.sort(this.compare('id'));
+          this.dataList = this.dataList.sort(this.compare('time'));
           this.tmpDataList = this.dataList;
         },
         getData:function(api) {
