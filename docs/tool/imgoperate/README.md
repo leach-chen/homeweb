@@ -1,5 +1,6 @@
 # 图片工具
 
+<ResourceTip/>
 
 <ResourceItem/>
 

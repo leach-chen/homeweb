@@ -1,6 +1,8 @@
 # 射击
 ---
 
+<ResourceTip/>
+
 <ResourceItem/>
 
 

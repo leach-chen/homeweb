@@ -1,6 +1,8 @@
 # 冒险
 ---
 
+<ResourceTip/>
+
 <ResourceItem/>
 
 

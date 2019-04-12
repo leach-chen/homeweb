@@ -1,6 +1,8 @@
 # 益智
 ---
 
+<ResourceTip/>
+
 <ResourceItem/>
 
 

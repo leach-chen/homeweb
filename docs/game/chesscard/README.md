@@ -1,6 +1,8 @@
 # 棋牌
 ---
 
+<ResourceTip/>
+
 <ResourceItem/>
 
 
