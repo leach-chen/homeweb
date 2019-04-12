@@ -136,8 +136,9 @@ module.exports = {
                     collapsable: false,
                     children: [
                         'all/',
-                        'h5/',
                         'coolh5/',
+                        'animationlib/',
+                        'h5/',
                         'hexo/',
                         'jekyll/',
                         'php/',

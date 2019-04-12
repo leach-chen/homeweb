@@ -149,8 +149,9 @@
 
 
         case co.PATH_H5_ALL:
-        case co.PATH_H5_CSS:
+        case co.PATH_H5_ANIMATIONLIB:
         case co.PATH_H5_COOLH5:
+        case co.PATH_H5_CSS:
         case co.PATH_H5_JKEYLL:
         case co.PATH_H5_HEXO:
         case co.PATH_H5_PHP:
@@ -359,14 +360,20 @@
 
 
               case co.PATH_H5_ALL:
-                that.dataList=res.data.dataWebsiteCss1.concat(res.data.dataWebsiteCoolH51)
+                that.dataList=res.data.dataWebsiteCoolH51.concat(res.data.dataWebsiteAnimationLib1).concat(res.data.dataWebsiteCss1)
               break
-              case co.PATH_H5_CSS:
-                that.dataList=res.data.dataWebsiteCss1
-              break
+
               case co.PATH_H5_COOLH5:
                 that.dataList=res.data.dataWebsiteCoolH51
               break;
+
+              case co.PATH_H5_ANIMATIONLIB:
+                that.dataList=res.data.dataWebsiteAnimationLib1
+              break;
+
+              case co.PATH_H5_CSS:
+                that.dataList=res.data.dataWebsiteCss1
+              break
 
               case co.PATH_H5_JKEYLL:
 
