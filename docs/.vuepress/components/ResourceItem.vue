@@ -13,7 +13,7 @@
           <div class="imgfloatcontent">
                <!-- <div class="imgfloatcontent" :style="{ 'background': 'url(' +item.thumbUrl + ') no-repeat center center', 'background-size': '100% 100%'}"> -->
               <div class = "imgcover"></div>
-              <img :src="item.thumbUrl"/>
+              <img class="thumbimg" :src="item.thumbUrl"/>
               <div class = "imgfloatdiv">
                   <p style="text-align: left;" v-if="isShowTag">{{item.tag}}</p>
                   <div style="width:100%;text-align:left;">
@@ -28,13 +28,13 @@
                       :src="'https://ghbtns.com/github-btn.html?user='+item.gitauthor+'&repo='+item.gitrepo+'&type=star&count=true'" v-if="item.gitauthor!=''&&item.gitrepo!=''">
                     </iframe>
                   </div>
-                  <p style="text-align: left;">{{item.description}}</p>
+                  <a class="itemdetail" :href="'https://www.leachchen.com/storedata1/favorite/?id='+item.id" style="text-align: left;"  target="_blank">{{item.description}}</a>
               </div>
               <!-- <img :src="item.thumbUrl"/> -->
 
           </div>
 
-            <div class="btncontent">
+            <div class="btncontent" style="display:none;">
                 <button class="btn1" v-on:click="onPreview(item.previewUrl)" v-if="isGame==false">预览效果</button>
                 <button class="btn1" v-on:click="onPreview(item.previewUrl)" v-else>马上挑战</button>
                 <button class="btn2" v-on:click="onDownload(item.downloadUrl)" v-if="isTool==false">源码下载</button>
@@ -44,7 +44,8 @@
             </div>
        </el-card>
 
-        <el-card class="box-card" v-if="index==0" style="margin-top:20px;height:340px;">
+        <!--<el-card class="box-card" v-if="index==0" style="margin-top:20px;height:340px;"> -->
+            <el-card class="box-card" v-if="index==0" style="margin-top:20px;height:290px;">
             <Adsense></Adsense>
         </el-card>
       </div>
