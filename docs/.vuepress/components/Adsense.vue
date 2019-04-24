@@ -8,14 +8,14 @@
             data-ad-format="auto"
             data-full-width-responsive="true"></ins>
        </div>
-       <div id="phoneuse" align="center">
+       <!--<div id="phoneuse" align="center">
             <ins class="adsbygoogle"
                 style="display:block; text-align:center;"
                 data-ad-layout="in-article"
                 data-ad-format="fluid"
                 data-ad-client="ca-pub-4924092018203651"
                 data-ad-slot="5632623295"></ins>
-       </div>
+       </div>-->
     </div>
 </template>
 
@@ -24,7 +24,7 @@
 var util = require('../public/js/utils.js')
 export default {
   mounted () {
-    if(util.isPhone()){
+    /*if(util.isPhone()){
         var pc = document.getElementById("pcuse")
         if (pc != null)
         {
@@ -36,7 +36,7 @@ export default {
         {
             phone.parentNode.removeChild(phone);
         }
-    }
+    }*/
     (adsbygoogle = window.adsbygoogle || []).push({});
  }
 }
