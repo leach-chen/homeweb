@@ -96,6 +96,7 @@
         case co.PATH_ANDROID_FULL:
         case co.PATH_ANDROID_ANIMATION:
         case co.PATH_ANDROID_VIEW:
+        case co.PATH_ANDROID_MEDIA:
         case co.PATH_ANDROID_SYNT:
         case co.PATH_ANDROID_COMPONENT:
         case co.PATH_ANDROID_ARCH:
@@ -261,6 +262,7 @@
                 that.dataList=res.data.dataAndroidFull1.concat(res.data.dataAndroidAnimation1)
                 .concat(res.data.dataAndroidView1).concat(res.data.dataAndroidSynthesize1)
                 .concat(res.data.dataAndroidArchitecture1).concat(res.data.dataAndroidComponent1)
+                .concat(res.data.dataAndroidMedia1)
                break;
               case co.PATH_ANDROID_FULL:
                 that.dataList=res.data.dataAndroidFull1
@@ -271,6 +273,9 @@
                case co.PATH_ANDROID_VIEW:
                that.dataList=res.data.dataAndroidView1
                break
+               case co.PATH_ANDROID_MEDIA:
+               that.dataList=res.data.dataAndroidMedia1
+               break;
                case co.PATH_ANDROID_SYNT:
                that.dataList=res.data.dataAndroidSynthesize1
                break

@@ -81,6 +81,7 @@ module.exports = {
                         'project/',
                         'animation/',
                         'view/',
+                        'media/',
                         'synthesize/',
                         'component/',
                         'architecture/',
