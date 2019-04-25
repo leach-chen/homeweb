@@ -197,6 +197,7 @@ module.exports = {
 4.创建对应的redmine目录
 5.storedata1里面添加分类
 6.在data js里面添加对应分类
+7.在storedata1/favorite/js/hand.js里面添加对应分类
 */
 
 
