@@ -95,6 +95,7 @@ module.exports = {
                     children: [
                         'all/',
                         'project/',
+						'view/',
                         'synthesize/',
                     ]
                 },
@@ -106,6 +107,8 @@ module.exports = {
                     children: [
                         'all/',
                         'project/',
+						'view/',
+                        'synthesize/',
                     ]
                 },
             ],

@@ -106,6 +106,7 @@
 
         case co.PATH_IOS_ALL:
         case co.PATH_IOS_FULL:
+        case co.PATH_IOS_VIEW:
         case co.PATH_IOS_SYNT:
           this.getData(this.apiios)
         break
@@ -114,6 +115,8 @@
 
         case co.PATH_FLUTTER_ALL:
         case co.PATH_FLUTTER_FULL:
+        case co.PATH_FLUTTER_VIEW:
+        case co.PATH_FLUTTER_SYNT:
            this.getData(this.apiflutter)
         break
 
@@ -288,10 +291,13 @@
 
 
               case co.PATH_IOS_ALL:
-                that.dataList=res.data.dataIosFull1.concat(res.data.dataIosSynthesize1)
+                that.dataList=res.data.dataIosFull1.concat(res.data.dataIosSynthesize1).concat(res.data.dataIosView1)
                 break
               case co.PATH_IOS_FULL:
                 that.dataList=res.data.dataIosFull1
+              break
+              case co.PATH_IOS_VIEW:
+                that.dataList=res.data.dataIosView1
               break
               case co.PATH_IOS_SYNT:
               that.dataList=res.data.dataIosSynthesize1
@@ -300,10 +306,16 @@
 
 
               case co.PATH_FLUTTER_ALL:
-               that.dataList=res.data.dataFlutterFull1
+               that.dataList=res.data.dataFlutterFull1.concat(res.data.dataFlutterView1).concat(res.data.dataFlutterSynthesize1)
               break
               case co.PATH_FLUTTER_FULL:
                 that.dataList=res.data.dataFlutterFull1
+              break
+              case co.PATH_FLUTTER_VIEW:
+                that.dataList=res.data.dataFlutterView1
+              break
+              case co.PATH_FLUTTER_SYNT:
+              that.dataList=res.data.dataFlutterSynthesize1
               break
 
 
