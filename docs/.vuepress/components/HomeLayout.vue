@@ -72,7 +72,7 @@
     <div class="commontent contentpart4">
 
       <p style="color:#fff;">2019 © Leach Chen</p>
-      <span id="busuanzi_container_site_pv" style="color:#fff;font-size:12px;margin-left:10px;margin-top:5px;">访问量：<span id="busuanzi_value_site_pv"></span>次</span>
+      <!--<span id="busuanzi_container_site_pv" style="color:#fff;font-size:12px;margin-left:10px;margin-top:5px;">访问量：<span id="busuanzi_value_site_pv"></span>次</span>-->
     </div>
   </el-container>
 </template>
