@@ -90,8 +90,8 @@
           var minute = date.getMinutes();
           var second = date.getSeconds();
 
-          this.imgurlgroup = "https://www.leachchen.com/storeother/img/wechatgroup.jpg"+"?time="+year+month+day+hour+minute
-          this.imgurlgongzhong = "https://www.leachchen.com/storeother/img/wechatgongzhong.jpg"+"?time="+year+month+day+hour+minute
+          this.imgurlgroup = "https://leach-chen.github.io/storeother/img/wechatgroup.jpg"+"?time="+year+month+day+hour+minute
+          this.imgurlgongzhong = "https://leach-chen.github.io/storeother/img/wechatgongzhong.jpg"+"?time="+year+month+day+hour+minute
 
     }
  }

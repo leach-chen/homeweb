@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-host="https://www.leachchen.com/"
+host="https://leach-chen.github.io/"
 
 #仓库名称，和git上统一，新增仓库需修改
 repo_android1="storeandroid1"

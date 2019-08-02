@@ -28,7 +28,7 @@
                       :src="'https://ghbtns.com/github-btn.html?user='+item.gitauthor+'&repo='+item.gitrepo+'&type=star&count=true'" v-if="item.gitauthor!=''&&item.gitrepo!=''">
                     </iframe>
                   </div>
-                  <a class="itemdetail" :href="'https://www.leachchen.com/storedata1/favorite/?id='+item.id" style="text-align: left;"  target="_blank">{{item.description}}</a>
+                  <a class="itemdetail" :href="'https://leach-chen.github.io/storedata1/favorite/?id='+item.id" style="text-align: left;"  target="_blank">{{item.description}}</a>
               </div>
               <!-- <img :src="item.thumbUrl"/> -->
 
@@ -73,14 +73,14 @@
       var dataList = [];
       return {
           dataList,
-          apiandroid:"https://www.leachchen.com/storedata1/android/android.js",
-          apiios:"https://www.leachchen.com/storedata1/ios/ios.js",
-          apiflutter:"https://www.leachchen.com/storedata1/flutter/flutter.js",
-          apireactnative:"https://www.leachchen.com/storedata1/reactnative/reactnative.js",
-          apivue:"https://www.leachchen.com/storedata1/vue/vue.js",
-          apigame:"https://www.leachchen.com/storedata1/game/game.js",
-          apitool:"https://www.leachchen.com/storedata1/tool/tool.js",
-          apiwebsite:"https://www.leachchen.com/storedata1/website/website.js",
+          apiandroid:"https://leach-chen.github.io/storedata1/android/android.js",
+          apiios:"https://leach-chen.github.io/storedata1/ios/ios.js",
+          apiflutter:"https://leach-chen.github.io/storedata1/flutter/flutter.js",
+          apireactnative:"https://leach-chen.github.io/storedata1/reactnative/reactnative.js",
+          apivue:"https://leach-chen.github.io/storedata1/vue/vue.js",
+          apigame:"https://leach-chen.github.io/storedata1/game/game.js",
+          apitool:"https://leach-chen.github.io/storedata1/tool/tool.js",
+          apiwebsite:"https://leach-chen.github.io/storedata1/website/website.js",
           isGame,
           isTool,
           isShowTag,
@@ -202,7 +202,7 @@
         onPreview:function(url)
         {
             //alert(url)
-            window.open("https://www.leachchen.com/webopen/open.html?open="+url+"/");
+            window.open("https://leach-chen.github.io/webopen/open.html?open="+url+"/");
             //window.location.href = url;
             //window.open(url);
         },
@@ -212,9 +212,9 @@
             //window.location.href = url;
             if(this.isTool == true)
             {
-                window.open("https://www.leachchen.com/webopen/open.html?open="+url+"/");
+                window.open("https://leach-chen.github.io/webopen/open.html?open="+url+"/");
             }else{
-                window.open("https://www.leachchen.com/webopen/download.html?open="+url);
+                window.open("https://leach-chen.github.io/webopen/download.html?open="+url);
             }
         },
 

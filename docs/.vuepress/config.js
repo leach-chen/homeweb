@@ -22,7 +22,7 @@ module.exports = {
 
          ['script', {src:"https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"}],
 
-         //['script', {src:"https://www.leachchen.com/storedata1/other/js/vconsole.min.js"}],
+         //['script', {src:"https://leach-chen.github.io/storedata1/other/js/vconsole.min.js"}],
 
          //['script', {},"var vConsole = new VConsole();"],
         ],
@@ -60,7 +60,7 @@ module.exports = {
             { text: '逆向', link: '/nixiang/article/' },
             { text: '留言', link: '/message/' },
             { text: 'Gitter聊天', link: 'https://gitter.im/leachchen/fullstack?utm_source=share-link&utm_medium=link&utm_campaign=share-link' },
-            { text: '博客', link: 'https://www.leachchen.com/blog' },
+            { text: '博客', link: 'https://leach-chen.github.io/blog' },
             //{ text: '投稿', link: '/contribute/' },
             { text: '加入', link: '/join/' },
         ],

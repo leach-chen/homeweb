@@ -128,7 +128,7 @@ export default {
         var minute = date.getMinutes();
         var second = date.getSeconds();
 
-        this.imgurlbk1 = "https://www.leachchen.com/storeother/img/bk1.jpg"+"?time="+year+month+day
+        this.imgurlbk1 = "https://leach-chen.github.io/storeother/img/bk1.jpg"+"?time="+year+month+day
   },
  methods:{
    goAndroid(){
@@ -161,7 +161,7 @@ export default {
       this.$router.push("/github/android/all/");
    },
    goBlog(){
-     this.$router.push("https://www.leachchen.com/blog");
+     this.$router.push("https://leach-chen.github.io/blog");
    },
    showcmd1(){
 
