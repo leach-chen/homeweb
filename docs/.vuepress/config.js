@@ -17,7 +17,7 @@ module.exports = {
 
 
          ['script', { async:"async",src:"//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"}],
-         ['script', {},"var _hmt = _hmt || [];(function() {var hm = document.createElement(\"script\");hm.src = \"https://hm.baidu.com/hm.js?0447a7b7b5fc544c1a27e5675a8e5a6c\";var s = document.getElementsByTagName(\"script\")[0]; s.parentNode.insertBefore(hm, s);})();"],
+        // ['script', {},"var _hmt = _hmt || [];(function() {var hm = document.createElement(\"script\");hm.src = \"https://hm.baidu.com/hm.js?0447a7b7b5fc544c1a27e5675a8e5a6c\";var s = document.getElementsByTagName(\"script\")[0]; s.parentNode.insertBefore(hm, s);})();"],
 
 
          ['script', {src:"https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"}],

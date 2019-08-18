@@ -1,12 +1,12 @@
 <template>
     <div>
      <div id="pcuse" align="center">
-          <ins class="adsbygoogle"
+          <!-- <ins class="adsbygoogle"
             style="display:block"
             data-ad-client="ca-pub-4924092018203651"
             data-ad-slot="4765483933"
             data-ad-format="auto"
-            data-full-width-responsive="true"></ins>
+            data-full-width-responsive="true"></ins> -->
        </div>
        <!-- <div id="phoneuse" align="center">
             <ins class="adsbygoogle"
