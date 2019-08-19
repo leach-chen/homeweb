@@ -61,6 +61,7 @@ module.exports = {
             { text: '留言', link: '/message/' },
             { text: 'Gitter聊天', link: 'https://gitter.im/leachchen/fullstack?utm_source=share-link&utm_medium=link&utm_campaign=share-link' },
             { text: '博客', link: 'https://leach-chen.github.io/blog' },
+            { text: '本站源码', link: 'https://github.com/leach-chen/homeweb' },
             //{ text: '投稿', link: '/contribute/' },
             { text: '加入', link: '/join/' },
         ],

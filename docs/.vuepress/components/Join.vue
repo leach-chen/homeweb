@@ -6,7 +6,6 @@
             <h2>贡献资源</h2>
             1：在留言区提交您的资源<br><br>
             2：在Gitter聊天室提交您的资源<br><br>
-            3：将您的资源发送至我的邮箱349763031@qq.com/leach.chen@gmail.com<br>
             <br>
             <strong>注：
             <br>1:资源上可展示资源提供者的昵称，资源提供者个人主页，
@@ -34,13 +33,13 @@
             <h2>欢迎加入</h2>
 
           <div class="joinpart">
-            <div class="joinitem">
+            <!--<div class="joinitem">
               <p>微信群</p>
               <img :src="imgurlgroup">
-            </div>
+            </div>-->
 
             <div class="joinitem">
-              <p>公众号</p>
+              <p>扫描获取加群方式</p>
               <img :src="imgurlgongzhong">
             </div>
           </div>
