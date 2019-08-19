@@ -39,7 +39,7 @@
             </div>-->
 
             <div class="joinitem">
-              <p>扫描获取加群方式</p>
+              <p>扫码获取加群方式</p>
               <img :src="imgurlgongzhong">
             </div>
           </div>
