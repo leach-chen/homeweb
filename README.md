@@ -13,6 +13,6 @@
 ![image](https://upload-images.jianshu.io/upload_images/3700891-c46371bba4b3ca43?imageMogr2/auto-orient/strip)
 
 
-微信交流群：
+微信交流群，扫码获取进群方式：
 
 ![image](https://upload-images.jianshu.io/upload_images/3700891-352d971f01cc2517?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
